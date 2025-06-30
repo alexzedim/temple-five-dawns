@@ -63,9 +63,9 @@
 
 ### 💬 Сообщения и контент ([`/messages/`](./messages/))
 
-#### 📋 Администрирование ([`/messages/administation/`](./messages/administation/))
-- [`adm-candidates.md`](./messages/administation/adm-candidates.md) — Материалы для кандидатов в администрацию
-- [`gm-candidates.md`](./messages/administation/gm-candidates.md) — Материалы для кандидатов на роль Великий Мастер
+#### 📋 Администрирование ([`/messages/administation/`](messages/administration/))
+- [`adm-candidates.md`](messages/administration/adm-candidates.md) — Материалы для кандидатов в администрацию
+- [`gm-candidates.md`](messages/administration/gm-candidates.md) — Материалы для кандидатов на роль Великий Мастер
 
 #### 💭 Чат и принципы ([`/messages/chat/`](./messages/chat/))
 - [`adm-tenets.md`](./messages/chat/adm-tenets.md) — Принципы администрации сообщества
@@ -114,7 +114,7 @@
 - [`persona-is-distress.md`](./messages/foundation/problematics/persona-is-distress.md) — Персона в бедствии
 - [`rat-man-fractals.md`](./messages/foundation/problematics/rat-man-fractals.md) — Фракталы крысиного человека
 - [`revert-undo.md`](./messages/foundation/problematics/revert-undo.md) — Проблема отката изменений
-- [`rules-and-free-choce.md`](./messages/foundation/problematics/rules-and-free-choce.md) — Правила и свободный выбор
+- [`rules-and-free-choce.md`](messages/foundation/problematics/rules-and-free-choice.md) — Правила и свободный выбор
 - [`the-only-thing-they-fear.md`](./messages/foundation/problematics/the-only-thing-they-fear.md) — Единственное, чего они боятся
 - [`wars-and-games.md`](./messages/foundation/problematics/wars-and-games.md) — Войны и игры
 - [`you-can-not-do.md`](./messages/foundation/problematics/you-can-not-do.md) — То, что нельзя делать
