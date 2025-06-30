@@ -77,7 +77,7 @@
 - [`extinction-unanimous.md`](./messages/foundation/problematics/extinction-unanimous.md) — Проблема единогласия
 - [`false-sence-of-comfort.md`](./messages/foundation/problematics/false-sence-of-comfort.md) — Ложное чувство комфорта
 - [`kin-dza-dza.md`](./messages/foundation/problematics/kin-dza-dza.md) — Анализ по мотивам фильма "Кин-дза-дза"
-- [`library.md`](./messages/foundation/problematics/library.md) — Проблемы библиотеки
+- [`library.md`](messages/foundation/library.md) — Проблемы библиотеки
 - [`personal-regiment.md`](./messages/foundation/problematics/personal-regiment.md) — Личный режим
 - [`persona-is-distress.md`](./messages/foundation/problematics/persona-is-distress.md) — Персона в бедствии
 - [`rat-man-fractals.md`](./messages/foundation/problematics/rat-man-fractals.md) — Фракталы крысиного человека

@@ -1,4 +1,4 @@
-# 📋 CONSOLIDATED STATEMENT
+# 📋 КОНСОЛИДИРОВАННОЕ МНЕНИЕ
 
 ### CYR • NEO • MONK • DSCD • CMNTY
 
