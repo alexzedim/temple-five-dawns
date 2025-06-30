@@ -1,50 +1,98 @@
 name: Deploy Temple-5-Dawns to GHPG
+# Название рабочего процесса
 
+# Условия запуска
 on:
+  # Запускать при каждом пуше в ветку 'main'
   push:
-    branches:
-      - master
-      - main
-  workflow_dispatch: # Позволяет запускать рабочий процесс вручную
+    branches: [ "main" ]
+  # Позволяет запускать этот воркфлоу вручную со страницы Actions
+  workflow_dispatch:
 
+# Права доступа, необходимые для развертывания на GitHub Pages
 permissions:
-  id-token: write
   contents: read
   pages: write
+  id-token: write
 
+# Отмена предыдущих запусков, если пришел новый коммит
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Описание задач (jobs)
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          # fetches all history for jekyll-last-modified-at
-          fetch-depth: 0
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true # Installs dependencies with bundle install
-
-      # Этот шаг будет использовать `_config.yml` в корне репозитория
-      # и собирать сайт, включая контент из /messages
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --source ./ --destination ./_site
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
-
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: build
     steps:
+      # Шаг 1: Клонирование вашего репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Шаг 2: Установка Node.js и утилиты 'marked' для конвертации Markdown
+      - name: Setup Node.js and marked
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install marked CLI
+        run: npm install -g marked
+
+      # Шаг 3: Сборка сайта
+      - name: Build the site
+        run: |
+          # Создаем папку 'site' для готового сайта
+          mkdir site
+
+          # Копируем папку с картинками
+          if [ -d "images" ]; then
+            cp -r images site/
+          fi
+          
+          # Создаем простой CSS файл для лучшего вида
+          echo "body { font-family: sans-serif; max-width: 800px; margin: 2em auto; padding: 0 1em; line-height: 1.6; } img { max-width: 100%; height: auto; }" > site/style.css
+
+          # Создаем главную страницу index.html
+          echo '<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Храм Пяти Рассветов</title><link rel="stylesheet" href="style.css"></head><body>' > site/index.html
+          echo '<h1>Храм Пяти Рассветов</h1><ul>' >> site/index.html
+
+          # Цикл по всем .md файлам в корне
+          for file in *.md; do
+            # Пропускаем README.md
+            if [[ "$file" == "README.md" ]]; then
+              continue
+            fi
+
+            # Готовим имена файлов
+            filename=$(basename "$file" .md)
+            html_file="$filename.html"
+
+            # Пытаемся взять заголовок из первого H1 (#) в файле, иначе используем имя файла
+            title=$(grep -m 1 '^# ' "$file" | sed 's/# //')
+            if [ -z "$title" ]; then
+              title=$filename
+            fi
+
+            # Конвертируем markdown в html и добавляем шапку с CSS и ссылкой "на главную"
+            marked -i "$file" -o "site/$html_file"
+            sed -i '1s;^;<head><meta charset="UTF-8"><link rel="stylesheet" href="style.css"></head><body><a href="index.html">← На главную</a><br><br>;' "site/$html_file"
+
+            # Добавляем ссылку на страницу в index.html
+            echo "<li><a href='$html_file'>$title</a></li>" >> site/index.html
+          done
+
+          echo '</ul></body></html>' >> site/index.html
+
+      # Шаг 4: Загрузка артефакта для GitHub Pages
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Загружать папку 'site'
+          path: './site'
+
+      # Шаг 5: Развертывание сайта
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
