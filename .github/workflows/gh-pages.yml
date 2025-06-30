@@ -23,16 +23,6 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true # Installs dependencies with bundle install
 
-      # Этот шаг использует Gemfile.lock для установки всех зависимостей,
-      # включая тему jekyll-theme-jek
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --source ./ --destination ./_site
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
-
       # Этот шаг будет использовать `_config.yml` в корне репозитория
       # и собирать сайт, включая контент из /messages
       - name: Build with Jekyll
