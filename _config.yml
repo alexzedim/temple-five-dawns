@@ -3,8 +3,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Данный репозиторий представляет собой полный архив ресурсов,
   стратегических документов и медиа-материалов русскоязычного Discord-сообщества
   "Храм Пяти Рассветов" — официального сообщества для игроков класса монах в игре World of Warcraft.
-baseurl: "/temple-five-dawns"
-url: "https://alexzedim.github.io"
+baseurl: ""
+url: "https://alexzedim.github.io/temple-five-dawns"
 github: alexzedim
 theme: jek
 
