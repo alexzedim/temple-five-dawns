@@ -1,7 +1,15 @@
 title: Temple Five Dawns
-baseurl: "https://alexzedim.github.io"
-url: "https://alexzedim.github.io/temple-five-dawns"
+description: >- # this means to ignore newlines until "baseurl:"
+  Данный репозиторий представляет собой полный архив ресурсов,
+  стратегических документов и медиа-материалов русскоязычного Discord-сообщества
+  "Храм Пяти Рассветов" — официального сообщества для игроков класса монах в игре World of Warcraft.
+baseurl: "/temple-five-dawns"
+url: "https://alexzedim.github.io"
+github: alexzedim
 theme: jek
+
+contact: true
+about: true
 
 # Указываем, что markdown-файлы лежат в messages
 collections:
@@ -13,9 +21,13 @@ collections:
 include:
   - messages
 
+edit-date: false # show the date of last edit on pages
+default-theme: sandcastle # pick which theme loads by default
+
 # Опционально: если нужны плагины
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 markdown: kramdown
+highlighter: rouge
