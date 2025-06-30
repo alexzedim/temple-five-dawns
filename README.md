@@ -98,12 +98,12 @@
 - [`07-the-apology.md`](./messages/foundation/fragments/07-the-apology.md) — Извинение
 
 ##### 👥 Персональные обращения
-- **Kerrigan** ([`/messages/foundation/for-andrey/`](./messages/foundation/for-andrey/))
-  - [`andrey.md`](./messages/foundation/for-andrey/andrey.md) — Обращение к Андрею
-- **Janesina** ([`/messages/foundation/for-janesina/`](./messages/foundation/for-janesina/))
-  - [`janesina.md`](./messages/foundation/for-janesina/janesina.md) — Обращение к Янесине
-- **Janisse** ([`/messages/foundation/for-janisse/`](./messages/foundation/for-janisse/))
-  - [`for-janisse.md`](./messages/foundation/for-janisse/for-janisse.md) — Обращение к Яниссе
+- **Kerrigan**
+  - [`andrey.md`](./messages/foundation/for-andrey/andrey.md) — Андрей
+- **Janesina**
+  - [`janesina.md`](./messages/foundation/for-janesina/janesina.md) — Женя
+- **Janisse**
+  - [`for-janisse.md`](./messages/foundation/for-janisse/for-janisse.md) — Юля
 
 ## 💡 Философия проекта
 
