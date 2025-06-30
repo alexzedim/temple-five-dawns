@@ -1,0 +1,21 @@
+title: Temple Five Dawns
+baseurl: "https://alexzedim.github.io"
+url: "https://alexzedim.github.io/temple-five-dawns"
+theme: jek
+
+# Указываем, что markdown-файлы лежат в messages
+collections:
+  messages:
+    output: true
+    permalink: /:collection/:path/
+
+# Включаем все файлы из messages
+include:
+  - messages
+
+# Опционально: если нужны плагины
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+markdown: kramdown
