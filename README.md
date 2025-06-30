@@ -138,7 +138,7 @@
 - **Nims**
   - [`nims.md`](messages/foundation/letters/nims.md) — Павел
 - **Janisse**
-  - [`for-janisse.md`](messages/foundation/letters/for-janisse.md) — Юля
+  - [`janisse.md`](messages/foundation/letters/janisse.md) — Юля
 
 
 ## 🛠️ Техническая информация
