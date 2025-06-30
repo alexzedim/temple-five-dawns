@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 
 # Укажите вашу тему здесь
-gem "jekyll-theme-jek"
+gem "jek"
 
 # Добавьте любые другие плагины, которые вы используете
 group :jekyll_plugins do
