@@ -27,7 +27,14 @@
 Знаю, что ты сможешь справиться со всем сама. Без чьей-либо помощи.
 
 Правьте мудро. 
+
+<div align="center">
+
 ![janisse-adm-sov](https://storage.yandexcloud.net/ora-avatars/janisse-adm-sov.png)
+
+</div>
+
+
 [Your sovereign majesty, by dignity](https://fxtwitter.com/schneissy/status/1693646371214041376?s=20).
 
 
