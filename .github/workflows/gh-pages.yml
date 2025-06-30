@@ -7,6 +7,10 @@ on:
       - main
   workflow_dispatch: # Позволяет запускать рабочий процесс вручную
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
