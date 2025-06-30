@@ -18,7 +18,7 @@
   <img src="images/art/queen.png" width="100%" alt="Queen"/>
 </p>
 
-## 🎯 Содержание
+## 📚 Содержание
 
 ### 🖼️ Медиа-ресурсы ([`/images/`](./images/))
 - **Арт и визуальные материалы** — концепт-арты, референсы, логотипы сообщества
@@ -28,28 +28,82 @@
 - **Роли** — визуализация ролевой системы сообщества
 
 ### 💬 Сообщения и контент ([`/messages/`](./messages/))
-- **[Администрирование](./messages/administration/)** — материалы для кандидатов в администрацию
-- **[Чат](./messages/chat/)** — принципы сообщества, правила, философия
-- **[Информация](./messages/information/)** — приветственные сообщения, атлас сообществ, описание ролей
-- **[Discovery](./messages/discovery/)** — материалы для знакомства с сообществом
 
-### 🏗️ Стратегические документы ([`/messages/foundation/`](./messages/foundation/))
+#### 📋 Администрирование ([`/messages/administation/`](./messages/administation/))
+- [`adm-candidates.md`](./messages/administation/adm-candidates.md) — Материалы для кандидатов в администрацию
+- [`gm-candidates.md`](./messages/administation/gm-candidates.md) — Материалы для кандидатов в ГМ
 
-Наиболее значимая часть репозитория содержит **масштабную программу модернизации Discord-сообщества**, разработанную автором, но так и не реализованную. Программа включала:
+#### 💭 Чат и принципы ([`/messages/chat/`](./messages/chat/))
+- [`adm-tenets.md`](./messages/chat/adm-tenets.md) — Принципы администрации сообщества
+- [`tenets.md`](./messages/chat/tenets.md) — Основные принципы сообщества
+- [`adm-tenets.json`](./messages/chat/adm-tenets.json) — JSON-версия принципов администрации
+- [`mmxxiv.md`](./messages/chat/mmxxiv.md) — Обращение к сообществу
 
-#### 📋 Ключевые стратегические документы:
-- **[`consolidated-statement.md`](./messages/foundation/consolidated-statement.md)** — анализ проблем сообщества и пути их решения
-- **[`strategy-roadmap.md`](./messages/foundation/strategy-roadmap.md)** — дорожная карта развития "NEO MONK DISCORD COMMUNITY"  
-- **[`mmxxiv.md`](./messages/foundation/mmxxiv.md)** — обращение к сообществу с предложениями реформ
-- **[`problematics/`](./messages/foundation/problematics/)** — детальный анализ вызовов и проблем сообщества
+#### ℹ️ Информация ([`/messages/information/`](./messages/information/))
+- [`welcome.md`](./messages/information/welcome.md) — Приветственное сообщение
+- [`roles.md`](./messages/information/roles.md) — Описание ролей в сообществе
+- [`atlas.md`](./messages/information/atlas.md) — Атлас сообществ монахов
+- [`atlas-embed.md`](./messages/information/atlas-embed.md) — Встраиваемая версия атласа
 
-#### 🎯 Основные направления программы реформ:
-- **Демократизация управления** — введение прозрачности и сменяемости администрации
-- **Создание Community Council** — площадка для участия сообщества в принятии решений
-- **Реформа модерации** — отказ от авторитарного стиля управления
-- **User Acquisition** — стратегии привлечения новой аудитории
-- **Признание заслуг** — система публичного признания вклада участников
-- **Уникальное торговое предложение** — разработка отличительных особенностей сообщества
+#### 🔍 Discovery ([`/messages/discovery/`](./messages/discovery/))
+- [`about.md`](./messages/discovery/about.md) — Информация о сообществе
+
+#### 🏗️ Стратегические документы ([`/messages/foundation/`](./messages/foundation/))
+
+Наиболее значимая часть репозитория содержит **масштабную программу модернизации Discord-сообщества**, разработанную автором, но так и не реализованную.
+
+##### 📄 Основные документы
+- [`consolidated-statement.md`](./messages/foundation/consolidated-statement.md) — Консолидированное заявление о проблемах и решениях
+- [`strategy-roadmap.md`](./messages/foundation/strategy-roadmap.md) — Дорожная карта развития сообщества
+- [`strategy-old.md`](./messages/foundation/strategy-old.md) — Старая версия стратегии
+- [`strategy-precursor.md`](./messages/foundation/strategy-precursor.md) — Предшественник стратегии
+- [`mmxxiv.md`](./messages/foundation/mmxxiv.md) — Обращение к сообществу с предложениями реформ
+- [`personal-opinion.md`](./messages/foundation/personal-opinion.md) — Личное мнение автора
+- [`draft.md`](./messages/foundation/draft.md) — Черновик документов
+- [`resignation-letter.md`](./messages/foundation/resignation-letter.md) — Письмо об отставке
+- [`who-am-i.md`](./messages/foundation/who-am-i.md) — Автобиографический рассказ автора
+
+##### 🎯 Стратегия ([`/messages/foundation/strategy/`](./messages/foundation/strategy/))
+- [`README.md`](./messages/foundation/strategy/README.md) — Индекс стратегических документов
+- [`01-community-diagnosis.md`](./messages/foundation/strategy/01-community-diagnosis.md) — Диагностика проблем сообщества
+- [`02-governance-transparency.md`](./messages/foundation/strategy/02-governance-transparency.md) — Прозрачность управления
+- [`03-unique-value-proposition.md`](./messages/foundation/strategy/03-unique-value-proposition.md) — Уникальное торговое предложение
+- [`04-user-acquisition-retention.md`](./messages/foundation/strategy/04-user-acquisition-retention.md) — Привлечение и удержание пользователей
+- [`05-content-moderation-guidelines.md`](./messages/foundation/strategy/05-content-moderation-guidelines.md) — Руководство по модерации контента
+- [`06-implementation-roadmap.md`](./messages/foundation/strategy/06-implementation-roadmap.md) — План реализации
+
+##### 🔍 Проблематика ([`/messages/foundation/problematics/`](./messages/foundation/problematics/))
+- [`challenges.md`](./messages/foundation/problematics/challenges.md) — Вызовы сообщества
+- [`extinction-unanimous.md`](./messages/foundation/problematics/extinction-unanimous.md) — Проблема единогласия
+- [`false-sence-of-comfort.md`](./messages/foundation/problematics/false-sence-of-comfort.md) — Ложное чувство комфорта
+- [`kin-dza-dza.md`](./messages/foundation/problematics/kin-dza-dza.md) — Анализ по мотивам фильма "Кин-дза-дза"
+- [`library.md`](./messages/foundation/problematics/library.md) — Проблемы библиотеки
+- [`personal-regiment.md`](./messages/foundation/problematics/personal-regiment.md) — Личный режим
+- [`persona-is-distress.md`](./messages/foundation/problematics/persona-is-distress.md) — Персона в бедствии
+- [`rat-man-fractals.md`](./messages/foundation/problematics/rat-man-fractals.md) — Фракталы крысиного человека
+- [`revert-undo.md`](./messages/foundation/problematics/revert-undo.md) — Проблема отката изменений
+- [`rules-and-free-choce.md`](./messages/foundation/problematics/rules-and-free-choce.md) — Правила и свободный выбор
+- [`the-only-thing-they-fear.md`](./messages/foundation/problematics/the-only-thing-they-fear.md) — Единственное, чего они боятся
+- [`wars-and-games.md`](./messages/foundation/problematics/wars-and-games.md) — Войны и игры
+- [`you-can-not-do.md`](./messages/foundation/problematics/you-can-not-do.md) — То, что нельзя делать
+
+##### 📝 Фрагменты ([`/messages/foundation/fragments/`](./messages/foundation/fragments/))
+- [`README.md`](./messages/foundation/fragments/README.md) — Индекс фрагментов
+- [`01-the-diagnosis.md`](./messages/foundation/fragments/01-the-diagnosis.md) — Диагноз
+- [`02-the-vision.md`](./messages/foundation/fragments/02-the-vision.md) — Видение
+- [`03-the-governance.md`](./messages/foundation/fragments/03-the-governance.md) — Управление
+- [`04-the-recognition.md`](./messages/foundation/fragments/04-the-recognition.md) — Признание
+- [`05-the-strategy.md`](./messages/foundation/fragments/05-the-strategy.md) — Стратегия
+- [`06-the-moderation.md`](./messages/foundation/fragments/06-the-moderation.md) — Модерация
+- [`07-the-apology.md`](./messages/foundation/fragments/07-the-apology.md) — Извинение
+
+##### 👥 Персональные обращения
+- **Kerrigan** ([`/messages/foundation/for-andrey/`](./messages/foundation/for-andrey/))
+  - [`andrey.md`](./messages/foundation/for-andrey/andrey.md) — Обращение к Андрею
+- **Janesina** ([`/messages/foundation/for-janesina/`](./messages/foundation/for-janesina/))
+  - [`janesina.md`](./messages/foundation/for-janesina/janesina.md) — Обращение к Янесине
+- **Janisse** ([`/messages/foundation/for-janisse/`](./messages/foundation/for-janisse/))
+  - [`for-janisse.md`](./messages/foundation/for-janisse/for-janisse.md) — Обращение к Яниссе
 
 ## 💡 Философия проекта
 
@@ -69,6 +123,12 @@
 - Реформу административной структуры
 - Развитие уникального контента и внутренней культуры
 - Стратегии роста и удержания аудитории
+- Демократизация управления — введение прозрачности и сменяемости администрации
+- Создание Community Council — площадка для участия сообщества в принятии решений
+- Реформа модерации** — отказ от авторитарного стиля управления
+- User Acquisition — стратегии привлечения новой аудитории
+- Признание заслуг — система публичного признания вклада участников
+- Уникальное торговое предложение — разработка отличительных особенностей сообщества
 
 **К сожалению, данная программа модернизации так и не была реализована** в полном объёме из-за организационных и политических сложностей внутри сообщества.
 
