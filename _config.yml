@@ -26,6 +26,7 @@ default-theme: sandcastle # pick which theme loads by default
 
 # Опционально: если нужны плагины
 plugins:
+  - jekyll-paginate
   - jekyll-feed
   - jekyll-seo-tag
 
