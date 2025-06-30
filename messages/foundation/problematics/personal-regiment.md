@@ -41,7 +41,8 @@
 А вот я. Зачем-то веду себя как образцовый клоун-шут. Надеваю 'форму' и:
 
 [nmdc720.mp4](../../../images/assets/nmdc720.mp4)
-*Not here to win. To clean up the mess.*
+
+*I am not here to win. I just clean up the mess.*
 
 Буквально, торгую лицом в очередной раз.
 
