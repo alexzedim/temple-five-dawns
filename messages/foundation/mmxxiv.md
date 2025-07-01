@@ -1,4 +1,4 @@
-# 🎆 MMXXIV — ОБРАЩЕНИЕ К СООБЩЕСТВУ
+# 🎆 MMXXIV — ЛИЧНОЕ ПОЗДРАВЛЕНИЕ
 
 ### CYR • NEO • MONK • DSCD • CMNTY
 
