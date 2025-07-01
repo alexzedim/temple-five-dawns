@@ -28,7 +28,6 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
               <nav className="hidden md:flex space-x-8">
                 <Link href="/messages" className="nav-link font-semibold">Сообщения</Link>
                 <Link href="/images" className="nav-link">Медиа</Link>
-                <Link href="/about" className="nav-link">О проекте</Link>
               </nav>
             </div>
           </div>

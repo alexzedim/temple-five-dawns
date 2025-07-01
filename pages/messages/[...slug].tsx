@@ -42,7 +42,6 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
               <nav className="hidden md:flex space-x-8">
                 <Link href="/messages" className="nav-link">Сообщения</Link>
                 <Link href="/images" className="nav-link">Медиа</Link>
-                <Link href="/about" className="nav-link">О проекте</Link>
               </nav>
             </div>
           </div>
@@ -139,8 +138,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slugArr = Array.isArray(params?.slug) ? params.slug : [params?.slug]
   const fileName = slugArr[slugArr.length - 1]
   const category = slugArr.length > 1 ? slugArr.slice(0, -1).join('/') : undefined
-  console.log(params, fileName) // @todo
-  const file = getMarkdownFileBySlug(fileName, category)
+
+  const file = getMarkdownFileBySlug(fileName as string, category)
 
   if (!file) {
     return {
