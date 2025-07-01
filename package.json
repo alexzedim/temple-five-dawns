@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -29,4 +29,4 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.40"
   }
-} 
+}
