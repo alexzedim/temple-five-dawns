@@ -69,7 +69,7 @@
 
 #### 💭 Чат и принципы ([`/messages/chat/`](./messages/chat/))
 - [`adm-tenets.md`](./messages/chat/adm-tenets.md) — Принципы администрации сообщества
-- [`tenets.md`](./messages/chat/tenets.md) — Основные принципы сообщества
+- [`civil-tenets.md`](messages/chat/civil-tenets.md) — Основные принципы сообщества
 - [`adm-tenets.json`](./messages/chat/adm-tenets.json) — JSON-версия принципов администрации
 - [`mmxxiv.md`](./messages/chat/mmxxiv.md) — Обращение к сообществу
 
