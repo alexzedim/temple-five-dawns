@@ -115,7 +115,6 @@
 - [`rat-man-fractals.md`](./messages/foundation/problematics/rat-man-fractals.md) — Фракталы крысиного человека
 - [`revert-undo.md`](./messages/foundation/problematics/revert-undo.md) — Проблема отката изменений
 - [`rules-and-free-choce.md`](messages/foundation/problematics/rules-and-free-choice.md) — Правила и свободный выбор
-- [`the-only-thing-they-fear.md`](./messages/foundation/problematics/the-only-thing-they-fear.md) — Единственное, чего они боятся
 - [`wars-and-games.md`](./messages/foundation/problematics/wars-and-games.md) — Войны и игры
 - [`you-can-not-do.md`](./messages/foundation/problematics/you-can-not-do.md) — То, что нельзя делать
 
