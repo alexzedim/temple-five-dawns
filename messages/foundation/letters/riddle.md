@@ -1,67 +1,100 @@
-# Nims
+# Загадка-кодового-слова: Арбуз
 
-Dear Pavel.
+**Паш.**
 
-Кодовое слово: 'Арбуз'.
+**Кодовое слово:** _Арбуз_
 
-Я — целеустремленный человек. Так получилось. 
+---
 
-За свою жизнь я понял что надо что-то делать для того-что-бы. Преследовать то, чего желаешь. \
-И я бежал за своей судьбой. Навстречу людьми и за ними. Даже если я преследовал их тогда, когда они того не хотели. Для того, что бы что-то получить, надо что-то делать.
+Я — целеустремлённый человек. Так получилось.
+
+За свою жизнь я понял, что надо что-то делать для того, чтобы чего-то достичь. Преследовать то, чего желаешь.  
+И я бежал за своей судьбой — навстречу людям и за ними. Даже если я преследовал их тогда, когда они того не хотели. Для того чтобы что-то получить, надо что-то делать.
 
 Но я устал. Устал преследовать, тянуть и тянуться. Звать тех, кто не бежит мне навстречу сам.
 
 Но в какой-то момент я проснулся и понял...
 
-I don't want to be a-part-of-it-any-more | Понял, что я уже не хочу быть частью всего этого.
+> **I don't want to be a part of it any more**  
+> _Понял, что я уже не хочу быть частью всего этого._
 
-But I took a vow. | Но я дал обещание.
+> **But I took a vow.**  
+> _Но я дал обещание._
 
 > *You see, I uncover thing that I am long time suspected. Despite that I know it, I didn't want to realize and accept that 'I really know it.'*
 
-So I'll tell you a riddle | Поэтому я загадаю тебе загадку
+**So I'll tell you a riddle**  
+_Поэтому я загадаю тебе загадку._
 
-Imagine yourself a girl | Представь себе девушку
-A pretty-princess girl | Девушку-принцессу
-Call her by her name | Назови её
+---
 
-And she is loved | И она любима
-Loved by the most | Любима большинством
-Loved by her family | Любима семьей
-Loved by society | Любима обществом
+**Imagine yourself a girl**  
+_Представь себе девушку._
 
-For her age | За свой возраст
-For her image | За свой образ
-For what she think | За то что, как она думает
-She thoughts & talks | что все дело в том, что она думает и говорит
+**A pretty-princess girl**  
+_Девушку-принцессу._
 
-All her life she lives in comfort | Всю свою жизнь она прожила в комфорте
-Without facing grief & tears | Всю свою жизнь она прожила в комфорте
-A real danger of this ruthless world | Вдали конкуренции и опасностей этого беспощадного мира
+**Call her by her name**  
+_Назови её._
 
-And she loved by the man | И она любима человеком
-A simple man | Простым человеком
-An ordinary man | Обычным человеком
+**And she is loved**  
+_И она любима._
 
-His love is real | И его любовь - реальна
-But silent | Но скромна
-Remains unanswered  | Безответна
+- Loved by the most — _Любима большинством_
+- Loved by her family — _Любима семьёй_
+- Loved by society — _Любима обществом_
 
-Like it's 'The Swineherd' fairy tale by Hans Christian Andersen | Словно из сказки Ганса Христиана Андерсона про свинопаса.
+**For her age**  
+_За свой возраст_
 
-Except one thing that you should know forward | Кроме одной вещи, что ты должен знать наперед
+**For her image**  
+_За свой образ_
 
-There are no such girls in this world | Нет такой девушки на свете
-that do not know that they loved by someone | которая не знала бы о том, что она любима кем-то
-before this 'someone' will told them to | ещё до того, как этот кто-то скажет ей об этом
+**For what she thinks**  
+_За то, как она думает_
 
-So there are only two questions remain. | Поэтому остаются два вопроса
-How soon and what would happens: | Как скоро и что произойдет:
+**She thinks & talks**  
+_Всё дело в том, что она думает и говорит_
 
-> *when this man realise that she is not just unworthy of his feelings? | когда этот человек поймет что объект его любви не достоит даже части его чувств?*
+**All her life she lives in comfort**  
+_Всю свою жизнь она прожила в комфорте_
+
+**Without facing grief & tears**  
+_Вдали от конкуренции и опасностей этого беспощадного мира_
+
+**And she is loved by the man**  
+_И она любима человеком_
+
+- A simple man — _Простым человеком_
+- An ordinary man — _Обычным человеком_
+
+**His love is real**  
+_И его любовь — реальна_
+
+- But silent — _Но скромна_
+- Remains unanswered — _Безответна_
+
+_Словно из сказки Ганса Христиана Андерсена про свинопаса._
+
+**Except one thing that you should know forward:**  
+_Кроме одной вещи, что ты должен знать наперёд:_
+
+> _Нет такой девушки на свете, которая не знала бы о том, что она любима кем-то, ещё до того, как этот кто-то скажет ей об этом._
+
+**So there are only two questions remain:**  
+_Поэтому остаются два вопроса:_
+
+1. **How soon and what would happen:**  
+   _Как скоро и что произойдёт:_
+
+> *when this man realise that she is not just unworthy of his feelings?*  
+> _когда этот человек поймёт, что объект его любви не достоин даже части его чувств?_
 >
-> *when does this 'arrogant object of love' fulfills it's hunger and stop benefiting from it? Can this 'more' become 'just enough'? | когда этот «высокомерный объект любви» утолит свой голод и перестанет получать от этого пользу? Думаешь «больше» это достаточно?*
+> *when does this 'arrogant object of love' fulfill its hunger and stop benefiting from it? Can this 'more' become 'just enough'?*  
+> _когда этот «высокомерный объект любви» утолит свой голод и перестанет получать от этого пользу? Думаешь, «больше» — это достаточно?_
 
-Для себя, я понял, что я не хочу искать ответ на этот вопрос. Как и вопрос что я должен задать самому себе: а почему я? Вопрос ли это веры и доверия чьей-либо веры в меня или чего-то другого?
+---
+
+Для себя я понял, что не хочу искать ответ на этот вопрос. Как и на вопрос, что я должен задать самому себе: а почему я? Вопрос ли это веры и доверия чьей-либо веры в меня или чего-то другого?
 
 Я так и не понял, Паш, кто ты такой.
