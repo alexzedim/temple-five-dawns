@@ -17,7 +17,7 @@
 
 <div align="center">
 
-![janesina-img-2.png](/images/assets/rippa-lafdre.png)
+![rippa-lafdre](/images/assets/rippa-lafdre.png)
 
 </div>
 
