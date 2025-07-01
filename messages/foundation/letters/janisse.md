@@ -1,5 +1,17 @@
 # LETTER OF TRANSITION
 
+### CYR • NEO • MONK • DSCD • CMNTY
+
+---
+
+<div align="center">
+
+![janisse-adm-sov](https://storage.yandexcloud.net/ora-avatars/janisse-adm-sov.png)
+
+</div>
+
+---
+
 Мы не друзья. У нас разные взгляды. И мы смотрим на мир иначе. 
 
 Но это письмо о транзите, если мы оба разделяем прагматичный взгляд на Храм Пяти Рассветов, как сильное, а не слабое сообщество, независимо от того, кому оно принадлежит.
@@ -27,13 +39,6 @@
 Знаю, что ты сможешь справиться со всем сама. Без чьей-либо помощи.
 
 Правьте мудро. 
-
-<div align="center">
-
-![janisse-adm-sov](https://storage.yandexcloud.net/ora-avatars/janisse-adm-sov.png)
-
-</div>
-
 
 [Your sovereign majesty, by dignity](https://fxtwitter.com/schneissy/status/1693646371214041376?s=20).
 
