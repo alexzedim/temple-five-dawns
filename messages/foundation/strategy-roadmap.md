@@ -1,4 +1,5 @@
 # 🚀 NEO MONK DISCORD COMMUNITY
+
 ## 📋 STRATEGY ROADMAP
 
 ### CYR • NEO • MONK • DSCD • CMNTY
