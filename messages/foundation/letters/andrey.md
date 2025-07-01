@@ -38,7 +38,7 @@
 
 <div align="center">
 
-![andrey-img.png](../..//images/assets/andrey-img.png)
+![andrey-img.png](/images/assets/andrey-img.png)
 
 </div>
 
@@ -75,7 +75,7 @@ https://discord.com/channels/217529277489479681/1202004425267486770
 
 <div align="center">
 
-![andrey-img-1.png](../..//images/assets/andrey-img-1.png)
+![andrey-img-1.png](/images/assets/andrey-img-1.png)
 
 </div>
 

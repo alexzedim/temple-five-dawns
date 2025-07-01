@@ -67,7 +67,7 @@
 
 <div align="center">
 
-![img.png](../..//images/assets/img.png)
+![img.png](/images/assets/img.png)
 
 </div>
 

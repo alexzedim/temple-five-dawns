@@ -22,7 +22,7 @@
 
 <div align="center">
 
-![img.png](../..//images/assets/nims-img.png)
+![img.png](/images/assets/nims-img.png)
 
 </div>
 

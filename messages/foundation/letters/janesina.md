@@ -20,7 +20,7 @@
 
 <div align="center">
 
-![janesina-img-2.png](../..//images/assets/janesina-img-2.png)
+![janesina-img-2.png](/images/assets/janesina-img-2.png)
 
 </div>
 
@@ -36,7 +36,7 @@
 
 <div align="center">
 
-![janesina-img-3.png](../..//images/assets/janesina-img-3.png)
+![janesina-img-3.png](/images/assets/janesina-img-3.png)
 
 </div>
 
@@ -53,7 +53,7 @@
 
 <div align="center">
 
-![janesina-img.png](../..//images/assets/janesina-img.png)
+![janesina-img.png](/images/assets/janesina-img.png)
 
 </div>
 
@@ -64,7 +64,7 @@
 
 <div align="center">
 
-![janesina-img-1.png](../..//images/assets/janesina-img-1.png)
+![janesina-img-1.png](/images/assets/janesina-img-1.png)
 
 </div>
 
@@ -76,7 +76,7 @@
 
 <div align="center">
 
-![janesina-img-4.png](../..//images/assets/janesina-img-4.png)
+![janesina-img-4.png](/images/assets/janesina-img-4.png)
 
 </div>
 
@@ -105,7 +105,7 @@ https://discord.com/channels/217529277489479681/217532087001939969/1184846540615
 
 <div align="center">
 
-![janesina-img-5.png](../..//images/assets/janesina-img-5.png)
+![janesina-img-5.png](/images/assets/janesina-img-5.png)
 
 </div>
 
@@ -124,7 +124,7 @@ https://discord.com/channels/217529277489479681/217532087001939969/1184846540615
 
 <div align="center">
 
-![janesina-img-6.png](../..//images/assets/janesina-img-6.png)
+![janesina-img-6.png](/images/assets/janesina-img-6.png)
 
 </div>
 

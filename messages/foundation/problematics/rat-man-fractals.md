@@ -41,7 +41,7 @@
 
 <div align="center">
 
-![img_1.png](../..//images/assets/img-1.png)
+![img_1.png](/images/assets/img-1.png)
 
 </div>
 
@@ -92,7 +92,7 @@
 
 <div align="center">
 
-![img_2.png](../..//images/assets/img-2.png)
+![img_2.png](/images/assets/img-2.png)
 
 </div>
 
