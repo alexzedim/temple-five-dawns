@@ -59,7 +59,7 @@ So there are only two questions remain. | Поэтому остаются два
 How soon and what would happens: | Как скоро и что произойдет:
 
 > *when this man realise that she is not just unworthy of his feelings? | когда этот человек поймет что объект его любви не достоит даже части его чувств?*
-> 
+>
 > *when does this 'arrogant object of love' fulfills it's hunger and stop benefiting from it? Can this 'more' become 'just enough'? | когда этот «высокомерный объект любви» утолит свой голод и перестанет получать от этого пользу? Думаешь «больше» это достаточно?*
 
 Для себя, я понял, что я не хочу искать ответ на этот вопрос. Как и вопрос что я должен задать самому себе: а почему я? Вопрос ли это веры и доверия чьей-либо веры в меня или чего-то другого?
