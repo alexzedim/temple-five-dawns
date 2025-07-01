@@ -40,7 +40,7 @@
 
 А вот я. Зачем-то веду себя как образцовый клоун-шут. Надеваю 'форму' и:
 
-[nmdc720.mp4](../../../images/assets/nmdc720.mp4)
+[nmdc720.mp4](../..//images/assets/nmdc720.mp4)
 
 *I am not here to win. I just clean up the mess.*
 

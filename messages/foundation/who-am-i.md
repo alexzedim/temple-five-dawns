@@ -32,7 +32,7 @@
 
 <div align="center">
 
-![img_1.png](../images/assets/mdc-img-1.png)
+![img_1.png](/images/assets/mdc-img-1.png)
 
 </div>
 
@@ -76,7 +76,7 @@ https://i.pinimg.com/originals/a8/32/8e/a8328e5ee5e0c9f6c0f155abf0b5c6ce.gif
 
 <div align="center">
 
-![img_2.png](../images/assets/mdc-img-2.png)
+![img_2.png](/images/assets/mdc-img-2.png)
 
 </div>
 
@@ -215,7 +215,7 @@ https://discord.com/channels/@me/435447708535226378/731170570443554926
 
 <div align="center">
 
-![img_3.png](../images/assets/mdc-img-3.png)
+![img_3.png](/images/assets/mdc-img-3.png)
 
 </div>
 

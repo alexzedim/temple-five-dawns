@@ -129,7 +129,7 @@ Baseline 2: Каждый, отражает не только себя, но и �
 
 <div align="center">
 
-![img_5.png](../images/assets/mdc-img-5.png)
+![img_5.png](/images/assets/mdc-img-5.png)
 
 </div>
 
@@ -165,7 +165,7 @@ https://discord.com/channels/212664465181769728/501708590651015188/1197132263285
 
 <div align="center">
 
-![img_7.png](../images/assets/mdc-img-7.png)
+![img_7.png](/images/assets/mdc-img-7.png)
 
 </div>
 
@@ -190,7 +190,7 @@ https://discord.com/channels/212664465181769728/501708590651015188/1197132263285
 
 <div align="center">
 
-![img_4.png](../images/assets/mdc-img-4.png)
+![img_4.png](/images/assets/mdc-img-4.png)
 
 </div>
 
