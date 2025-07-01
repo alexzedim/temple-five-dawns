@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { getAllMarkdownFiles, getAllCategories } from '../../lib/markdown'
+import { getAllMarkdownFiles, getAllCategories } from '@/lib/markdown'
 
 interface MessagesPageProps {
   files: ReturnType<typeof getAllMarkdownFiles>
@@ -14,7 +14,7 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
         <title>💬 Сообщения и документы - Temple Five Dawns</title>
         <meta name="description" content="Архив документов и стратегических материалов сообщества" />
       </Head>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-monk-50 to-primary-50">
         {/* Header */}
         <header className="bg-white/80 backdrop-blur-sm border-b border-monk-200 sticky top-0 z-50">
@@ -48,9 +48,9 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
           <div className="grid gap-8">
             {categories.map((category) => {
               const categoryFiles = files.filter(file => file.category === category)
-              const categoryName = category === 'general' ? 'Общие документы' : 
+              const categoryName = category === 'general' ? 'Общие документы' :
                 category.split('/').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' / ')
-              
+
               return (
                 <div key={category} className="card">
                   <h2 className="text-2xl font-bold text-monk-900 mb-6">
@@ -58,8 +58,8 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
                   </h2>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {categoryFiles.map((file) => (
-                      <Link 
-                        key={file.slug} 
+                      <Link
+                        key={file.slug}
                         href={`/messages/${file.relativePath}`}
                         className="block p-4 border border-monk-200 rounded-lg hover:border-primary-300 hover:shadow-md transition-all duration-200 bg-white"
                       >
@@ -112,11 +112,11 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
 export async function getStaticProps() {
   const files = getAllMarkdownFiles()
   const categories = getAllCategories()
-  
+
   return {
     props: {
       files,
       categories,
     },
   }
-} 
+}

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from '../../lib/markdown'
+import { getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from '@/lib/markdown'
 
 interface MarkdownPageProps {
   file: ReturnType<typeof getMarkdownFileBySlug>
@@ -28,7 +28,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
         <title>{(file.title ?? 'Документ')} - Temple Five Dawns</title>
         <meta name="description" content={file.excerpt} />
       </Head>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-monk-50 to-primary-50">
         {/* Header */}
         <header className="bg-white/80 backdrop-blur-sm border-b border-monk-200 sticky top-0 z-50">
@@ -97,7 +97,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
             </header>
 
             {/* Content */}
-            <div 
+            <div
               className="prose prose-lg max-w-none prose-headings:text-monk-900 prose-p:text-monk-700 prose-strong:text-monk-900 prose-a:text-primary-600 prose-blockquote:border-l-primary-500 prose-blockquote:bg-primary-50 prose-blockquote:pl-4"
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />
@@ -122,13 +122,13 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const files = getAllMarkdownFiles()
-  
+
   const paths = files.map((file) => ({
     params: {
       slug: file.relativePath.split('/'),
     },
   }))
-  
+
   return {
     paths,
     fallback: false,
@@ -139,7 +139,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slugArr = Array.isArray(params?.slug) ? params.slug : [params?.slug]
   const fileName = slugArr[slugArr.length - 1]
   const category = slugArr.length > 1 ? slugArr.slice(0, -1).join('/') : undefined
-
+  console.log(params, fileName) // @todo
   const file = getMarkdownFileBySlug(fileName, category)
 
   if (!file) {
@@ -156,4 +156,4 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       htmlContent,
     },
   }
-} 
+}

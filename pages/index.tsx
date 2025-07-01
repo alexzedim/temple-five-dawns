@@ -11,7 +11,7 @@ export default function Home(): JSX.Element {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <div className="min-h-screen bg-gradient-to-br from-monk-50 to-primary-50">
         {/* Header */}
         <header className="bg-white/80 backdrop-blur-sm border-b border-monk-200 sticky top-0 z-50">
@@ -75,10 +75,10 @@ export default function Home(): JSX.Element {
             <p className="text-monk-700 mb-4">
               Автор репозитория являлся <strong>co-HEAD</strong> данного Discord-сообщества и принимал активное участие в его развитии и стратегическом планировании.
             </p>
-            
+
             <div className="bg-primary-50 border-l-4 border-primary-500 p-4 my-6">
               <p className="text-primary-800">
-                <strong>Программа развития базировалась на принципах:</strong>
+                <strong>Вызовы с которыми нам предстояло столкнуться:</strong>
               </p>
               <ul className="mt-2 space-y-1 text-primary-700">
                 <li>• <strong>Свобода самовыражения</strong> vs излишняя цензура</li>
@@ -86,6 +86,24 @@ export default function Home(): JSX.Element {
                 <li>• <strong>Прозрачность</strong> vs закрытость административных процессов</li>
                 <li>• <strong>Развитие</strong> vs стагнация</li>
                 <li>• <strong>Сообщество</strong> vs культ личности</li>
+              </ul>
+            </div>
+
+            <div className="bg-primary-50 border-l-4 border-primary-500 p-4 my-6">
+              <p className="text-primary-800">
+                <strong>Программа развития базировалась на:</strong>
+              </p>
+              <ul className="mt-2 space-y-1 text-primary-700">
+                <li>• Внедрение системы голосования по развитию сообщества</li>
+                <li>• Создание публичной летописи достижений участников</li>
+                <li>• Реформу административной структуры</li>
+                <li>• Развитие уникального контента и внутренней культуры</li>
+                <li>• Демократизация управления — введение прозрачности и сменяемости администрации</li>
+                <li>• Создание Community Council — площадка для участия сообщества в принятии решений</li>
+                <li>• Реформа модерации** — отказ от авторитарно-эмоционального стиля управления</li>
+                <li>• User Acquisition — стратегии привлечения новой аудитории</li>
+                <li>• Признание заслуг — система публичного признания вклада участников</li>
+                <li>• Уникальное торговое предложение — разработка отличительных особенностей сообщества</li>
               </ul>
             </div>
           </div>
@@ -167,4 +185,4 @@ export default function Home(): JSX.Element {
       </div>
     </>
   )
-} 
+}
