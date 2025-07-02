@@ -3,6 +3,7 @@ import { getAllMarkdownFiles, getMarkdownFileBySlug } from "@/lib/markdown";
 export interface MessagesPageProps {
   files: ReturnType<typeof getAllMarkdownFiles>
   categories: string[]
+  imageCount: number
 }
 
 export interface MarkdownPageProps {

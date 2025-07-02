@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { MarkdownPageProps, categoryToPath, toDate, getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from "@/lib";
+import { categoryToPath, toDate } from "@/lib/utils";
+import { MarkdownPageProps } from "@/lib/interface";
+import { getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from "@/lib/markdown";
 
 export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): JSX.Element {
   if (!file) {

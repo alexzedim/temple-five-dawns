@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { MessagesPageProps } from "@/lib/interface";
-import { getAllCategories, getAllMarkdownFiles } from "@/lib";
+import { countAllImages, getAllCategories, getAllMarkdownFiles } from "@/lib/markdown";
 
-export default function MessagesPage({ files, categories }: MessagesPageProps): JSX.Element {
+
+export default function MessagesPage({ files, categories, imageCount }: MessagesPageProps): JSX.Element {
   return (
     <>
       <Head>
@@ -50,11 +51,11 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
               <div className="text-4xl font-bold text-monk-600 mb-2">{categories.length}</div>
               <div className="text-monk-700 font-medium">Категорий</div>
             </div>
-            <div className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-gradient-to-br from-purple to-purple-dark rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl font-bold text-gold-600 mb-2">
-                {files.filter(f => f.tags && f.tags.length > 0).length}
+                {imageCount}
               </div>
-              <div className="text-monk-700 font-medium">С тегами</div>
+              <div className="text-monk-700 font-medium">Медиа-изображений</div>
             </div>
           </section>
 
@@ -186,11 +187,13 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
 export async function getStaticProps() {
   const files = getAllMarkdownFiles()
   const categories = getAllCategories()
+  const imageCount = countAllImages()
 
   return {
     props: {
       files,
       categories,
+      imageCount,
     },
   }
 }
