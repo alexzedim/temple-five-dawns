@@ -3,28 +3,11 @@ import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
+import { MarkdownFile } from "@/lib/interface";
 
 const messagesDirectory = path.join(process.cwd(), 'messages')
 
-export interface MarkdownFile {
-  slug: string
-  title: string
-  content: string
-  excerpt: string
-  date?: string
-  category?: string
-  tags?: string[]
-  fullPath: string
-  relativePath: string
-}
 
-export interface MarkdownMeta {
-  title?: string
-  date?: string
-  category?: string
-  tags?: string[]
-  excerpt?: string
-}
 
 export function getAllMarkdownFiles(): MarkdownFile[] {
   const files: MarkdownFile[] = []
@@ -96,6 +79,11 @@ export function getAllCategories(): string[] {
   const files = getAllMarkdownFiles()
   const categories = new Set(files.map(file => file.category).filter((cat): cat is string => cat !== undefined))
   return Array.from(categories).sort()
+}
+
+export function countAllImages(): number {
+  // @todo
+  return 0;
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {
