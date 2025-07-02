@@ -96,7 +96,7 @@ export default function MessagesPage({ files, categories }: MessagesPageProps): 
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary-600">
-                  {files.filter(f => f.tags.length > 0).length}
+                  {files.filter(f => f.tags && f.tags.length > 0).length}
                 </div>
                 <div className="text-monk-600">С тегами</div>
               </div>

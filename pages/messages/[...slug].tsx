@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from '@/lib/markdown'
+import { categoryToPath, toDate } from "@/lib/utils";
 
 interface MarkdownPageProps {
   file: ReturnType<typeof getMarkdownFileBySlug>
@@ -61,7 +62,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
               {file.category && file.category !== 'general' && (
                 <>
                   <li>/</li>
-                  <li className="text-monk-900">{file.category}</li>
+                  <li className="text-monk-900">{categoryToPath(file.category)}</li>
                 </>
               )}
             </ol>
@@ -81,7 +82,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
                   </span>
                 )}
                 {file.date && (
-                  <span>📅 {new Date(file.date).toLocaleDateString('ru-RU')}</span>
+                  <span>📅 {toDate(file.date)}</span>
                 )}
                 {file.tags && file.tags.length > 0 && (
                   <div className="flex flex-wrap gap-2">

@@ -63,7 +63,6 @@ export function getAllMarkdownFiles(): MarkdownFile[] {
 
         const firstParagraph = paragraphs[0] || ''
         const excerpt = firstParagraph.substring(0, 200) + (firstParagraph.length > 200 ? '...' : '')
-
         files.push({
           slug,
           title,
