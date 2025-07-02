@@ -7,72 +7,42 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundColor: {
-        'white': '#ffffff'
-      },
-      textColor: {
-        'white': '#ffffff'
-      },
       colors: {
+        // Main palette colors
+        smoke: '#f5f5f5',    // White smoke
+        gold: '#e0cd67',     // Citron
+        jade: '#00bb77',     // Jade
+        purple: '#702963',   // Byzantium
+        dark: '#393a41',     // Onyx
+
+        // Essential variants
+        'smoke-dark': '#c4c4c4',
+        'gold-dark': '#a38f21',
+        'gold-light': '#f3ebc2',
+        'jade-dark': '#007148',
+        'jade-light': '#7effd0',
+        'purple-dark': '#43193b',
+        'purple-light': '#d897cc',
+        'dark-light': '#5d5f6b',
+
+        // Legacy colors with reduced variants
+        white: '#ffffff',
+        black: '#000000',
+
+        // Keep minimal primary and monk colors for backwards compatibility
         primary: {
           50: '#f9f5e1',
           100: '#f3ebc2',
-          200: '#ece1a4',
-          300: '#e6d785',
-          400: '#e0cd67',
-          500: '#d5bc30',
-          600: '#a38f21',
+          500: '#e0cd67',  // gold
+          600: '#a38f21',  // gold-dark
           700: '#6c5f16',
-          800: '#36300b',
-          900: '#1a1805',
         },
         monk: {
           50: '#bfffe7',
           100: '#7effd0',
-          200: '#3effb8',
-          300: '#00fda0',
-          400: '#00bb77',
-          500: '#009760',
-          600: '#007148',
-          700: '#004b30',
-          800: '#002618',
-          900: '#00130c',
-        },
-        byzantium: {
-          50: '#eccbe6',
-          100: '#d897cc',
-          200: '#c563b3',
-          300: '#a43d91',
-          400: '#702963',
-          500: '#59214f',
-          600: '#43193b',
-          700: '#2d1128',
-          800: '#160814',
-          900: '#0b040a',
-        },
-        white: {
-          50: '#fdfdfd',
-          100: '#fbfbfb',
-          200: '#f9f9f9',
-          300: '#f7f7f7',
-          400: '#f5f5f5',
-          500: '#c4c4c4',
-          600: '#939393',
-          700: '#626262',
-          800: '#313131',
-          900: '#191919',
-        },
-        onyx: {
-          50: '#d6d6db',
-          100: '#acadb7',
-          200: '#838493',
-          300: '#5d5f6b',
-          400: '#393a41',
-          500: '#2e2e34',
-          600: '#222327',
-          700: '#17171a',
-          800: '#0b0c0d',
-          900: '#060607',
+          500: '#00bb77',  // jade
+          600: '#007148',  // jade-dark
+          900: '#002618',
         }
       },
       fontFamily: {

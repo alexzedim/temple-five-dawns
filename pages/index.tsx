@@ -12,9 +12,9 @@ export default function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-monk-50 to-primary-50">
+      <div className="min-h-screen bg-dark">
         {/* Header */}
-        <header className="bg-white/80 backdrop-blur-sm border-b border-monk-200 sticky top-0 z-50">
+        <header className="bg-jade-dark backdrop-blur-sm border-b border-purple sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               <div className="flex items-center space-x-4">
@@ -25,14 +25,13 @@ export default function Home(): JSX.Element {
                   height={48}
                   className="rounded-lg"
                 />
-                <h1 className="text-xl font-bold text-monk-900">
+                <h1 className="text-xl font-bold text-smoke">
                   Temple Five Dawns
                 </h1>
               </div>
               <nav className="hidden md:flex space-x-8">
                 <Link href="/messages" className="nav-link">Сообщения</Link>
                 <Link href="/images" className="nav-link">Медиа</Link>
-                <Link href="/about" className="nav-link">О проекте</Link>
               </nav>
             </div>
           </div>
@@ -50,10 +49,10 @@ export default function Home(): JSX.Element {
                 className="rounded-2xl shadow-2xl"
               />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-monk-900 mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-gold mb-6">
               🏛️ TEMPLE FIVE DAWNS
             </h1>
-            <p className="text-xl text-monk-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-smoke mb-8 max-w-3xl mx-auto">
               Архив русскоязычного Discord-сообщества для игроков класса монах в World of Warcraft
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -68,19 +67,19 @@ export default function Home(): JSX.Element {
 
           {/* About Section */}
           <div className="card mb-12">
-            <h2 className="text-2xl font-bold text-monk-900 mb-6">📜 О проекте</h2>
-            <p className="text-monk-700 mb-4">
+            <h2 className="text-2xl font-bold text-gold mb-6">📜 О проекте</h2>
+            <p className="text-smoke mb-4">
               Данный репозиторий представляет собой полный архив ресурсов, стратегических документов и медиа-материалов русскоязычного Discord-сообщества <strong>"Храм Пяти Рассветов"</strong> — официального сообщества для ~15'000 игроков класса монах в игре World of Warcraft.
             </p>
-            <p className="text-monk-700 mb-4">
+            <p className="text-smoke mb-4">
               Автор репозитория являлся <strong>co-HEAD</strong> данного Discord-сообщества и принимал активное участие в его развитии и стратегическом планировании.
             </p>
 
-            <div className="bg-primary-50 border-l-4 border-primary-500 p-4 my-6">
-              <p className="text-primary-800">
+            <div className="bg-purple-dark border-l-4 border-gold p-4 my-6">
+              <p className="text-gold">
                 <strong>Вызовы с которыми нам предстояло столкнуться:</strong>
               </p>
-              <ul className="mt-2 space-y-1 text-primary-700">
+              <ul className="mt-2 space-y-1 text-smoke">
                 <li>• <strong>Свобода самовыражения</strong> vs излишняя цензура</li>
                 <li>• <strong>Меритократия</strong> vs персоналистичность</li>
                 <li>• <strong>Прозрачность</strong> vs закрытость административных процессов</li>
@@ -89,11 +88,11 @@ export default function Home(): JSX.Element {
               </ul>
             </div>
 
-            <div className="bg-primary-50 border-l-4 border-primary-500 p-4 my-6">
-              <p className="text-primary-800">
+            <div className="bg-purple-dark border-l-4 border-gold p-4 my-6">
+              <p className="text-gold">
                 <strong>Программа развития базировалась на:</strong>
               </p>
-              <ul className="mt-2 space-y-1 text-primary-700">
+              <ul className="mt-2 space-y-1 text-smoke">
                 <li>• Внедрение системы голосования по развитию сообщества</li>
                 <li>• Создание публичной летописи достижений участников</li>
                 <li>• Реформу административной структуры</li>
@@ -111,11 +110,11 @@ export default function Home(): JSX.Element {
           {/* Content Sections */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="card">
-              <h3 className="text-xl font-bold text-monk-900 mb-4">🖼️ Медиа-ресурсы</h3>
-              <p className="text-monk-700 mb-4">
+              <h3 className="text-xl font-bold text-gold mb-4">🖼️ Медиа-ресурсы</h3>
+              <p className="text-smoke mb-4">
                 Полная коллекция визуальных материалов сообщества:
               </p>
-              <ul className="space-y-2 text-monk-600">
+              <ul className="space-y-2 text-smoke-dark">
                 <li>• Арт и концепт-арты</li>
                 <li>• Эмодзи-пак (400+ уникальных)</li>
                 <li>• Анимированные стикеры</li>
@@ -127,11 +126,11 @@ export default function Home(): JSX.Element {
             </div>
 
             <div className="card">
-              <h3 className="text-xl font-bold text-monk-900 mb-4">💬 Сообщения и контент</h3>
-              <p className="text-monk-700 mb-4">
+              <h3 className="text-xl font-bold text-gold mb-4">💬 Сообщения и контент</h3>
+              <p className="text-smoke mb-4">
                 Архив документов и стратегических материалов:
               </p>
-              <ul className="space-y-2 text-monk-600">
+              <ul className="space-y-2 text-smoke-dark">
                 <li>• Административные документы</li>
                 <li>• Принципы сообщества</li>
                 <li>• Стратегические планы</li>
@@ -145,18 +144,18 @@ export default function Home(): JSX.Element {
 
           {/* Related Resources */}
           <div className="card">
-            <h2 className="text-2xl font-bold text-monk-900 mb-6">🔗 Связанные ресурсы</h2>
+            <h2 className="text-2xl font-bold text-gold mb-6">🔗 Связанные ресурсы</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-semibold text-monk-800 mb-2">Социальные сети</h3>
-                <ul className="space-y-2 text-monk-600">
+                <h3 className="font-semibold text-smoke mb-2">Социальные сети</h3>
+                <ul className="space-y-2 text-smoke-dark">
                   <li>• <a href="https://discord.gg/P52zeKR" className="text-primary-600 hover:underline">Discord: Храм Пяти Рассветов</a></li>
                   <li>• <a href="https://templefivedawns.ru" className="text-primary-600 hover:underline">Официальный сайт</a></li>
                 </ul>
               </div>
               <div>
-                <h3 className="font-semibold text-monk-800 mb-2">Информация</h3>
-                <ul className="space-y-2 text-monk-600">
+                <h3 className="font-semibold text-smoke mb-2">Информация</h3>
+                <ul className="space-y-2 text-smoke-dark">
                   <li>• Тематика: World of Warcraft — Класс Монах</li>
                   <li>• Аудитория: Русскоязычное игровое сообщество</li>
                   <li>• Масштаб: 15,000+ участников</li>
@@ -167,16 +166,16 @@ export default function Home(): JSX.Element {
         </main>
 
         {/* Footer */}
-        <footer className="bg-monk-900 text-white py-12 mt-16">
+        <footer className="bg-purple text-smoke py-12 mt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <p className="text-monk-300 mb-4">
+              <p className="text-gold mb-4">
                 "The future belongs to those who change it."
               </p>
-              <p className="text-monk-400 text-sm">
+              <p className="text-smoke-dark text-sm">
                 — Neo Monk Discord Community
               </p>
-              <p className="text-monk-400 text-sm mt-4">
+              <p className="text-smoke-dark text-sm mt-4">
                 Данный архив представлен в образовательных и исследовательских целях
               </p>
             </div>

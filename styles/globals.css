@@ -10,25 +10,41 @@
   }
 
   body {
-    @apply bg-monk-50 text-monk-900;
+    @apply bg-jade-dark text-smoke;
+  }
+
+  footer {
+    @apply bg-purple text-smoke py-8;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-gold hover:bg-gold-dark text-dark font-medium py-2 px-4 rounded-lg transition-colors duration-200;
   }
 
   .btn-secondary {
-    @apply bg-monk-200 hover:bg-monk-300 text-monk-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-jade-dark hover:bg-jade text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
   }
 
   .card {
-    @apply bg-white rounded-lg shadow-md p-6 border border-monk-200;
+    @apply bg-dark rounded-lg shadow-md p-6 border border-gold;
   }
 
   .nav-link {
-    @apply text-monk-600 hover:text-primary-600 transition-colors duration-200;
+    @apply text-smoke hover:text-gold transition-colors duration-200;
+  }
+
+  .footer-link {
+    @apply text-purple-light hover:text-gold transition-colors duration-200;
+  }
+
+  .footer-heading {
+    @apply text-gold font-semibold mb-4;
+  }
+
+  .footer-content {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   /* Line clamp utilities */
@@ -49,23 +65,23 @@
 
 /* Custom prose styles for markdown content */
 .prose {
-  @apply text-monk-700;
+  @apply text-smoke;
 }
 
 .prose h1 {
-  @apply text-3xl font-bold text-monk-900 mb-6;
+  @apply text-3xl font-bold text-purple mb-6;
 }
 
 .prose h2 {
-  @apply text-2xl font-bold text-monk-900 mb-4 mt-8;
+  @apply text-2xl font-bold text-purple mb-4 mt-8;
 }
 
 .prose h3 {
-  @apply text-xl font-semibold text-monk-900 mb-3 mt-6;
+  @apply text-xl font-semibold text-purple-dark mb-3 mt-6;
 }
 
 .prose h4 {
-  @apply text-lg font-semibold text-monk-900 mb-2 mt-4;
+  @apply text-lg font-semibold text-purple-dark mb-2 mt-4;
 }
 
 .prose p {
@@ -85,27 +101,27 @@
 }
 
 .prose blockquote {
-  @apply border-l-4 border-primary-500 bg-primary-50 pl-4 py-2 mb-4 italic;
+  @apply border-l-4 border-gold bg-dark pl-4 py-2 mb-4 italic;
 }
 
 .prose code {
-  @apply bg-monk-100 text-monk-800 px-1 py-0.5 rounded text-sm;
+  @apply bg-dark text-gold px-1 py-0.5 rounded text-sm;
 }
 
 .prose pre {
-  @apply bg-monk-900 text-white p-4 rounded-lg overflow-x-auto mb-4;
+  @apply bg-dark text-smoke p-4 rounded-lg overflow-x-auto mb-4;
 }
 
 .prose pre code {
-  @apply bg-transparent text-white p-0;
+  @apply bg-transparent text-smoke p-0;
 }
 
 .prose a {
-  @apply text-primary-600 hover:text-primary-700 underline;
+  @apply text-jade hover:text-jade-dark underline;
 }
 
 .prose strong {
-  @apply font-semibold text-monk-900;
+  @apply font-semibold text-purple;
 }
 
 .prose em {
@@ -117,13 +133,13 @@
 }
 
 .prose table {
-  @apply w-full border-collapse border border-monk-300 mb-4;
+  @apply w-full border-collapse border border-smoke-dark mb-4;
 }
 
 .prose th {
-  @apply bg-monk-100 border border-monk-300 px-4 py-2 text-left font-semibold;
+  @apply bg-smoke border border-smoke-dark px-4 py-2 text-left font-semibold;
 }
 
 .prose td {
-  @apply border border-monk-300 px-4 py-2;
+  @apply border border-smoke-dark px-4 py-2;
 }
