@@ -98,7 +98,7 @@
 
 ##### 🎯 Стратегия ([`/messages/foundation/strategy/`](./messages/foundation/strategy/))
 - [`README.md`](./messages/foundation/strategy/README.md) — Индекс стратегических документов
-- [`01-community-diagnosis.md`](./messages/foundation/strategy/01-community-diagnosis.md) — Диагностика проблем сообщества
+- [`01-community-diagnosis.md`](messages/foundation/strategy/01-community.md) — Диагностика проблем сообщества
 - [`02-governance-transparency.md`](./messages/foundation/strategy/02-governance-transparency.md) — Прозрачность управления
 - [`03-unique-value-proposition.md`](./messages/foundation/strategy/03-unique-value-proposition.md) — Уникальное торговое предложение
 - [`04-user-acquisition-retention.md`](./messages/foundation/strategy/04-user-acquisition-retention.md) — Привлечение и удержание пользователей
@@ -151,7 +151,7 @@
 
 Репозиторий может служить:
 - **Шаблоном** для создания игровых Discord-сообществ
-- **Кейс-стади** по развитию онлайн-сообществ
+- **Кейс-стадии** по развитию онлайн-сообществ
 - **Архивом** методологий управления игровыми сообществами
 - **Источником** готовых ресурсов (эмодзи, стикеры, структуры)
 
