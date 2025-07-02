@@ -1,9 +1,10 @@
 # PEPA 
 
 ---
+
 <div align="center">
 
-![pepa](/images/assets/pepa-bd.png)
+![pepa.png](/images/assets/pepa.png)
 
 </div>
 

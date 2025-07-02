@@ -12,19 +12,19 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
         <meta name="description" content="Архив документов и стратегических материалов сообщества" />
       </Head>
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-smoke-dark">
         {/* Header */}
-        <header className="bg-white/90 backdrop-blur-sm border-b border-monk-200 sticky top-0 z-50">
+        <header className="bg-dark backdrop-blur-sm border-b border-monk-200 sticky top-0 z-50">
           <div className="max-w-screen-xl mx-auto px-4 sm:px-8">
             <div className="flex justify-between items-center py-6">
               <div className="flex items-center space-x-4">
-                <Link href="/" className="text-xl font-bold text-monk-900 hover:text-primary-600 transition-colors">
+                <Link href="/" className="text-xl font-bold text-gold hover:text-jade transition-colors">
                   ← Temple Five Dawns
                 </Link>
               </div>
               <nav className="hidden md:flex space-x-8">
-                <Link href="/messages" className="nav-link font-semibold">Сообщения</Link>
-                <Link href="/images" className="nav-link">Медиа</Link>
+                <Link href="/messages" className="nav-link font-semibold text-gold hover:text-jade">Сообщения</Link>
+                <Link href="/images" className="nav-link text-gold hover:text-jade">Медиа</Link>
               </nav>
             </div>
           </div>
@@ -45,11 +45,11 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
           <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl font-bold text-primary-600 mb-2">{files.length}</div>
-              <div className="text-monk-700 font-medium">Всего документов</div>
+              <div className="text-gold-dark font-medium">Всего документов</div>
             </div>
             <div className="bg-gradient-to-br from-monk-50 to-monk-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl font-bold text-monk-600 mb-2">{categories.length}</div>
-              <div className="text-monk-700 font-medium">Категорий</div>
+              <div className="text-monk-900 font-medium">Категорий</div>
             </div>
             <div className="bg-gradient-to-br from-purple to-purple-dark rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl font-bold text-gold-600 mb-2">

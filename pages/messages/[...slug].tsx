@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { categoryToPath, toDate } from "@/lib/utils";
+import { categoryToPath } from "@/lib/utils";
 import { MarkdownPageProps } from "@/lib/interface";
 import { getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from "@/lib/markdown";
 
@@ -71,42 +71,6 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Main Content - 8 columns on desktop */}
             <article className="lg:col-span-8">
-              {/* Article Header */}
-              <header className="mb-12">
-                <div className="mb-6">
-                  {file.category && file.category !== 'general' && (
-                    <span className="inline-block bg-jade-dark text-jade-light px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wider">
-                      {file.category}
-                    </span>
-                  )}
-                </div>
-
-                <h1 className="text-4xl md:text-5xl font-bold text-gold mb-6 leading-tight">
-                  {file.title}
-                </h1>
-
-                <div className="flex flex-wrap items-center gap-6 text-sm text-smoke-dark border-t border-purple pt-6">
-                  {file.date && (
-                    <div className="flex items-center">
-                      <svg className="w-4 h-4 mr-2 text-jade" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      {toDate(file.date)}
-                    </div>
-                  )}
-
-                  {file.tags && file.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-2">
-                      {file.tags.map((tag) => (
-                        <span key={tag} className="bg-purple-dark text-purple-light px-3 py-1 rounded-full text-xs font-medium">
-                          #{tag}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </header>
-
               {/* Article Content */}
               <div
                 className="prose prose-lg max-w-none
