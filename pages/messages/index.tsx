@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { MessagesPageProps } from "@/lib/interface";
 import { countAllImages, getAllCategories, getAllMarkdownFiles } from "@/lib/markdown";
+import { toDate } from '@/lib/utils';
 
 
 export default function MessagesPage({ files, categories, imageCount }: MessagesPageProps): JSX.Element {
@@ -94,7 +95,7 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
                               </span>
                               {file.date && (
                                 <span className="text-xs text-monk-500">
-                                  {new Date(file.date).toLocaleDateString('ru-RU')}
+                                  {toDate(file.date)}
                                 </span>
                               )}
                             </div>

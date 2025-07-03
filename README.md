@@ -120,7 +120,7 @@
 
 ##### 📝 Фрагменты ([`/messages/foundation/fragments/`](./messages/foundation/fragments/))
 - [`README.md`](./messages/foundation/fragments/README.md) — Индекс фрагментов
-- [`01-the-diagnosis.md`](./messages/foundation/fragments/01-the-diagnosis.md) — Диагноз
+- [`01-the-diagnosis.md`](messages/foundation/fragments/01-the-community.md) — Диагноз
 - [`02-the-vision.md`](./messages/foundation/fragments/02-the-vision.md) — Видение
 - [`03-the-governance.md`](./messages/foundation/fragments/03-the-governance.md) — Управление
 - [`04-the-recognition.md`](./messages/foundation/fragments/04-the-recognition.md) — Признание
