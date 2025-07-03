@@ -70,4 +70,4 @@ I always have a romantic view on people. Perhaps too romantic.
 
 ---
 
-*"Признание ошибок — первый шаг к их исправлению."* 
+*"Признание ошибок — первый шаг к их исправлению".* 
