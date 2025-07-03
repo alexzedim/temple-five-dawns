@@ -88,9 +88,9 @@
 
 ##### 📄 Основные документы
 - [`consolidated-statement.md`](./messages/foundation/consolidated-statement.md) — Консолидированное мнение о проблемах и решениях
-- [`strategy-roadmap.md`](./messages/foundation/strategy-roadmap.md) — Дорожная карта развития сообщества
-- [`strategy-old.md`](./messages/foundation/strategy-old.md) — Старая версия стратегии
-- [`strategy-precursor.md`](./messages/foundation/strategy-precursor.md) — Предшественник стратегии
+- [`strategy-roadmap.md`](messages/foundation/strategy/strategy-roadmap.md) — Дорожная карта развития сообщества
+- [`strategy-old.md`](messages/foundation/strategy/strategy-old.md) — Старая версия стратегии
+- [`strategy-precursor.md`](messages/foundation/strategy/strategy-precursor.md) — Предшественник стратегии
 - [`mmxxiv.md`](./messages/foundation/mmxxiv.md) — Новогоднее обращение к сообществу 2024
 - [`personal-opinion.md`](./messages/foundation/personal-opinion.md) — Личное мнение автора
 - [`library.md`](./messages/foundation/library.md) — Библиотека мнений

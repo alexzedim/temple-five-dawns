@@ -88,6 +88,10 @@
   @apply mb-4 leading-relaxed;
 }
 
+.prose hr {
+  @apply mb-4 pl-6;
+}
+
 .prose ul {
   @apply mb-4 pl-6;
 }
