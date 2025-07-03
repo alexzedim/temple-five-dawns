@@ -24,7 +24,7 @@
 
 <div align="center">
 
-![janesina-img-2](images/assets/janesina-img-2.png)
+![janesina-img-2](/images/assets/janesina-img-2.png)
 
 </div>
 
@@ -37,7 +37,7 @@
 
 <div align="center">
 
-![janesina-img-3.png](./images/assets/janesina-img-3.png)
+![janesina-img-3.png](/images/assets/janesina-img-3.png)
 
 </div>
 
