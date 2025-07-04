@@ -32,10 +32,10 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <nav className="hidden md:flex">
-              <div className="flex space-x-8 text-sm font-medium uppercase tracking-wider">
-                <Link href="/messages" className="text-gold hover:text-jade transition-colors">Архив</Link>
-                <Link href="/images" className="text-gold hover:text-jade transition-colors">Медиа</Link>
-              </div>
+              <nav className="hidden md:flex space-x-8">
+                <Link href="/messages" className="nav-link font-semibold text-gold hover:text-jade">Сообщения</Link>
+                <Link href="/images" className="nav-link text-gold hover:text-jade">Медиа</Link>
+              </nav>
             </nav>
           </div>
         </header>
@@ -286,7 +286,7 @@ export default function Home(): JSX.Element {
           <div className="container mx-auto px-4">
             <div className="border-t border-dark-light pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="text-smoke-dark text-sm">
-                &copy; 2023 Temple Five Dawns Archive
+                &copy; MMXXIII Temple Five Dawns
               </p>
               <p className="text-gold-light italic text-sm mt-4 md:mt-0">
                 "The future belongs to those who change it." — Neo Monk Discord Community

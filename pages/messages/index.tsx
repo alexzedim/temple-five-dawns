@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { MessagesPageProps } from "@/lib/interface";
 import { countAllImages, getAllCategories, getAllMarkdownFiles } from "@/lib/markdown";
-import { toDate } from '@/lib/utils';
+import { toCategoryName, toCategoryNumber, toDate } from '@/lib/utils';
 
 
 export default function MessagesPage({ files, categories, imageCount }: MessagesPageProps): JSX.Element {
@@ -19,8 +19,8 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
           <div className="max-w-screen-xl mx-auto px-4 sm:px-8">
             <div className="flex justify-between items-center py-6">
               <div className="flex items-center space-x-4">
-                <Link href="/" className="text-xl font-bold text-gold hover:text-jade transition-colors">
-                  ← Temple Five Dawns
+                <Link href="/" className="text-2xl font-heading font-normal tracking-tight text-gold hover:text-jade transition-colors">
+                  ← TEMPLE FIVE DAWNS
                 </Link>
               </div>
               <nav className="hidden md:flex space-x-8">
@@ -34,23 +34,23 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
         <main className="max-w-screen-xl mx-auto px-4 sm:px-8 py-16">
           {/* Hero Section */}
           <section className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-heading font-extrabold text-monk-900 mb-6 tracking-tight">
-              💬 Сообщения и документы
+            <h1 className="text-4xl md:text-6xl font-heading font-normal text-gold-dark mb-6 tracking-tight">
+              📋 СООБЩЕНИЯ И ДОКУМЕНТЫ
             </h1>
-            <p className="text-2xl font-body text-monk-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl font-body text-dark max-w-3xl mx-auto leading-relaxed">
               Архив документов, стратегических материалов и персональных обращений сообщества
             </p>
           </section>
 
           {/* Statistics Cards */}
           <section className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl font-bold text-primary-600 mb-2">{files.length}</div>
-              <div className="text-gold-dark font-medium">Всего документов</div>
+            <div className="bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-4xl font-bold text-smoke mb-2">{files.length}</div>
+              <div className="text-smoke font-medium">Всего документов</div>
             </div>
-            <div className="bg-gradient-to-br from-monk-50 to-monk-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
-              <div className="text-4xl font-bold text-monk-600 mb-2">{categories.length}</div>
-              <div className="text-monk-900 font-medium">Категорий</div>
+            <div className="bg-gradient-to-br from-monk-500 to-monk-600 rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+              <div className="text-4xl font-bold text-smoke mb-2">{categories.length}</div>
+              <div className="text-smoke font-medium">Категорий</div>
             </div>
             <div className="bg-gradient-to-br from-purple to-purple-dark rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl font-bold text-gold-600 mb-2">
@@ -64,18 +64,17 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
           <section className="space-y-16">
             {categories.map((category) => {
               const categoryFiles = files.filter(file => file.category === category)
-              const categoryName = category === 'general' ? 'Общие документы' :
-                category.split('/').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' / ')
+              const categoryName = toCategoryName(category)
 
               return (
                 <div key={category} className="space-y-8">
                   {/* Category Header */}
                   <div className="border-b border-monk-200 pb-6">
-                    <h2 className="text-3xl font-heading font-bold text-monk-900 mb-2">
+                    <h2 className="text-3xl font-heading font-normal text-dark mb-2 uppercase">
                       📁 {categoryName}
                     </h2>
-                    <p className="text-monk-600 text-lg">
-                      {categoryFiles.length} документов в категории
+                    <p className="text-gold-dark text-lg">
+                      {toCategoryNumber(categoryFiles)}
                     </p>
                   </div>
 
@@ -90,8 +89,8 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
                           {/* Article Header */}
                           <div className="p-6">
                             <div className="flex items-center justify-between mb-3">
-                              <span className="text-xs font-semibold text-primary-600 uppercase tracking-wider">
-                                {file.category}
+                              <span className="text-xs font-semibold text-jade uppercase tracking-wider">
+                                {categoryName}
                               </span>
                               {file.date && (
                                 <span className="text-xs text-monk-500">
@@ -100,7 +99,7 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
                               )}
                             </div>
 
-                            <h3 className="text-xl font-heading font-bold text-monk-900 mb-3 line-clamp-2 group-hover:text-primary-600 transition-colors">
+                            <h3 className="text-xl font-heading font-normal text-monk-900 mb-3 line-clamp-2 group-hover:text-gold-dark transition-colors">
                               {file.title}
                             </h3>
 
@@ -153,33 +152,21 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
               )
             })}
           </section>
-
-          {/* Call to Action */}
-          <section className="mt-20 text-center">
-            <div className="bg-gradient-to-r from-primary-50 to-gold-50 rounded-3xl p-12 shadow-lg">
-              <h2 className="text-3xl font-heading font-bold text-monk-900 mb-4">
-                Изучите архив сообщества
-              </h2>
-              <p className="text-xl text-monk-600 mb-8 max-w-2xl mx-auto">
-                Откройте для себя стратегические документы, принципы сообщества и историю развития
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/messages/foundation"
-                  className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors shadow-lg hover:shadow-xl"
-                >
-                  Основные документы
-                </Link>
-                <Link
-                  href="/messages/information"
-                  className="bg-monk-600 hover:bg-monk-700 text-white px-8 py-3 rounded-lg font-medium transition-colors shadow-lg hover:shadow-xl"
-                >
-                  Информационные материалы
-                </Link>
-              </div>
-            </div>
-          </section>
         </main>
+
+        {/* Footer */}
+        <footer className="bg-dark text-smoke py-12">
+          <div className="container mx-auto px-4">
+            <div className="border-t border-dark-light pt-8 flex flex-col md:flex-row justify-between items-center">
+              <p className="text-smoke-dark text-sm">
+                &copy; MMXXIII Temple Five Dawns
+              </p>
+              <p className="text-gold-light italic text-sm mt-4 md:mt-0">
+                "The future belongs to those who change it." — Neo Monk Discord Community
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   )
