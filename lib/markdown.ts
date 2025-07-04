@@ -79,9 +79,18 @@ export function getAllCategories(): string[] {
   return Array.from(categories).sort()
 }
 
-export function countAllImages(): number {
-  // @todo
-  return 0;
+export function countAllImages(dir: string = 'public'): number {
+  let count = 0;
+  const entries = fs.readdirSync(dir, {withFileTypes: true});
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      count += countAllImages(fullPath);
+    } else if (entry.isFile() && /\.(png|jpe?g)$/i.test(entry.name)) {
+      count++;
+    }
+  }
+  return count;
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {
