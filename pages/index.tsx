@@ -107,7 +107,7 @@ export default function Home(): JSX.Element {
             <div className="container mx-auto px-4">
               <div className="border-t border-b border-jade py-12">
                 <div className="flex items-center mb-8">
-                  <div className="w-12 h-1 bg-jade mr-4"></div>
+                  <div className="w-12 h-1 bg-purple mr-4"></div>
                   <h2 className="text-jade text-2xl font-heading font-bold">О проекте</h2>
                 </div>
 
