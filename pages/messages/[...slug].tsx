@@ -81,7 +81,8 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
                   prose-p:text-smoke prose-p:leading-relaxed prose-p:mb-6
                   prose-strong:text-gold prose-strong:font-semibold
                   prose-a:text-jade prose-a:font-medium prose-a:no-underline hover:prose-a:underline
-                  prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:bg-dark prose-blockquote:pl-6 prose-blockquote:py-4 prose-blockquote:rounded-r-lg
+                  prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:bg-dark prose-blockquote:pl-6
+                  prose-blockquote:py-4 prose-blockquote:rounded-r-lg
                   prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
                   prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
                   prose-li:text-smoke
