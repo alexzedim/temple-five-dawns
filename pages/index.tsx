@@ -92,7 +92,7 @@ export default function Home(): JSX.Element {
                 <div className="text-gold grid grid-cols-1 lg:grid-cols-2 gap-12">
                   <div>
                     <p className="text-dark text-lg leading-relaxed mb-6">
-                      Данный репозиторий представляет собой полный архив ресурсов, стратегических документов и медиа-материалов русскоязычного Discord-сообщества <strong>"Храм Пяти Рассветов"</strong> — официального сообщества для ~15'000 игроков класса монах в игре World of Warcraft.
+                      Данный репозиторий представляет собой полный архив ресурсов, стратегических документов и медиа-материалов русскоязычного Discord-сообщества <Link href="https://discord.gg/P52zeKR" className="text-purple hover:text-jade transition-colors"><strong>"Храм Пяти Рассветов"</strong></Link> — официального сообщества для ~15'000 игроков класса монах в игре World of Warcraft.
                     </p>
                     <p className="text-dark text-lg leading-relaxed mb-6">
                       Автор репозитория являлся <strong className="text-purple">co-HEAD</strong> данного Discord-сообщества и принимал активное участие в его развитии и стратегическом планировании.
