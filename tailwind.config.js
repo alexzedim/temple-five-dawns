@@ -46,8 +46,14 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        // Основные шрифты
+        sans: ['Source Sans Pro', 'system-ui', 'sans-serif'], // Для чтения
+        heading: ['Inter', 'system-ui', 'sans-serif'], // Для заголовков
         serif: ['Georgia', 'serif'],
+        
+        // Утилитарные классы
+        'display': ['Inter', 'system-ui', 'sans-serif'], // Для больших заголовков
+        'body': ['Source Sans Pro', 'system-ui', 'sans-serif'], // Для основного текста
       },
     },
   },

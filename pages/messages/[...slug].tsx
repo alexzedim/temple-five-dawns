@@ -11,7 +11,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
       <div className="min-h-screen bg-dark flex items-center justify-center">
         <div className="text-center max-w-md mx-auto px-4">
           <div className="bg-purple-dark border border-purple rounded-2xl p-8 shadow-lg">
-            <h1 className="text-2xl font-bold text-gold mb-4">Документ не найден</h1>
+            <h1 className="text-2xl font-heading font-bold text-gold mb-4">Документ не найден</h1>
             <p className="text-smoke mb-6">Запрашиваемый документ не существует или был удалён.</p>
             <Link href="/messages" className="bg-jade hover:bg-jade-dark text-dark px-6 py-3 rounded-lg font-medium transition-colors">
               Вернуться к списку
@@ -112,7 +112,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
             <aside className="lg:col-span-4 space-y-8">
               {/* Table of Contents */}
               <div className="bg-purple-dark border border-purple rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-gold mb-4">Содержание</h3>
+                <h3 className="text-lg font-heading font-bold text-gold mb-4">Содержание</h3>
                 <nav className="space-y-2">
                   <a href="#overview" className="block text-sm text-smoke hover:text-jade transition-colors">
                     Обзор документа
@@ -128,7 +128,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
               {/* Related Documents */}
               <div className="bg-dark border border-purple rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-gold mb-4">Похожие документы</h3>
+                <h3 className="text-lg font-heading font-bold text-gold mb-4">Похожие документы</h3>
                 <div className="space-y-4">
                   <Link href="/messages/foundation" className="block group">
                     <div className="text-sm text-jade uppercase tracking-wider mb-1">Основы</div>
@@ -150,7 +150,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
               {/* Share */}
               <div className="bg-gold-dark border border-gold rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-dark mb-4">Поделиться</h3>
+                <h3 className="text-lg font-heading font-bold text-dark mb-4">Поделиться</h3>
                 <div className="flex space-x-3">
                   <button className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

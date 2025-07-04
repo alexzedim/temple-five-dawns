@@ -34,10 +34,10 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
         <main className="max-w-screen-xl mx-auto px-4 sm:px-8 py-16">
           {/* Hero Section */}
           <section className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold text-monk-900 mb-6 tracking-tight">
+            <h1 className="text-5xl md:text-6xl font-heading font-extrabold text-monk-900 mb-6 tracking-tight">
               💬 Сообщения и документы
             </h1>
-            <p className="text-2xl text-monk-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-2xl font-body text-monk-600 max-w-3xl mx-auto leading-relaxed">
               Архив документов, стратегических материалов и персональных обращений сообщества
             </p>
           </section>
@@ -71,7 +71,7 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
                 <div key={category} className="space-y-8">
                   {/* Category Header */}
                   <div className="border-b border-monk-200 pb-6">
-                    <h2 className="text-3xl font-bold text-monk-900 mb-2">
+                    <h2 className="text-3xl font-heading font-bold text-monk-900 mb-2">
                       📁 {categoryName}
                     </h2>
                     <p className="text-monk-600 text-lg">
@@ -100,11 +100,11 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
                               )}
                             </div>
 
-                            <h3 className="text-xl font-bold text-monk-900 mb-3 line-clamp-2 group-hover:text-primary-600 transition-colors">
+                            <h3 className="text-xl font-heading font-bold text-monk-900 mb-3 line-clamp-2 group-hover:text-primary-600 transition-colors">
                               {file.title}
                             </h3>
 
-                            <p className="text-monk-600 mb-4 line-clamp-3 leading-relaxed">
+                            <p className="text-monk-600 mb-4 line-clamp-3 leading-relaxed font-body">
                               {file.excerpt}
                             </p>
 
@@ -157,7 +157,7 @@ export default function MessagesPage({ files, categories, imageCount }: Messages
           {/* Call to Action */}
           <section className="mt-20 text-center">
             <div className="bg-gradient-to-r from-primary-50 to-gold-50 rounded-3xl p-12 shadow-lg">
-              <h2 className="text-3xl font-bold text-monk-900 mb-4">
+              <h2 className="text-3xl font-heading font-bold text-monk-900 mb-4">
                 Изучите архив сообщества
               </h2>
               <p className="text-xl text-monk-600 mb-8 max-w-2xl mx-auto">

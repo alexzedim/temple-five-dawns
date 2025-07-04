@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
                 className="rounded-sm"
               />
               <div>
-                <h1 className="text-2xl font-serif font-bold tracking-tight text-gold">
+                <h1 className="text-2xl font-heading font-bold tracking-tight text-gold">
                   TEMPLE FIVE DAWNS
                 </h1>
                 <div className="text-xs text-white-dark tracking-widest mt-1">ХРАМ ПЯТИ РАССВЕТОВ</div>
@@ -56,7 +56,7 @@ export default function Home(): JSX.Element {
                 />
                 <div className="absolute bottom-0 left-0 p-8 z-20">
                   <div className="inline-block bg-gold px-3 py-1 text-xs font-semibold text-dark uppercase tracking-wider mb-4">Архив сообщества</div>
-                  <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold mb-4 max-w-2xl">
+                  <h1 className="text-4xl md:text-5xl font-heading font-bold text-gold mb-4 max-w-2xl">
                     Храм Пяти Рассветов: Взгляд Изнутри
                   </h1>
                   <p className="text-lg text-smoke mb-6 max-w-2xl">
@@ -74,7 +74,7 @@ export default function Home(): JSX.Element {
             {/* Featured articles - 4 columns on desktop */}
             <div className="lg:col-span-4 space-y-8">
               <div className="p-6 border-l-4 border-jade bg-smoke shadow-sm">
-                <h2 className="text-2xl font-serif font-bold mb-4 text-purple">Избранные материалы</h2>
+                <h2 className="text-2xl font-heading font-bold mb-4 text-purple">Избранные материалы</h2>
                 <div className="space-y-6">
                   <Link href="/messages/foundation/library/pacifism_article" className="block group">
                     <div className="text-sm text-dark-light uppercase tracking-wider mb-1">Библиотека</div>
@@ -108,7 +108,7 @@ export default function Home(): JSX.Element {
               <div className="border-t border-b border-jade py-12">
                 <div className="flex items-center mb-8">
                   <div className="w-12 h-1 bg-jade mr-4"></div>
-                  <h2 className="text-jade text-2xl font-serif font-bold">О проекте</h2>
+                  <h2 className="text-jade text-2xl font-heading font-bold">О проекте</h2>
                 </div>
 
                 <div className="text-gold grid grid-cols-1 lg:grid-cols-2 gap-12">
