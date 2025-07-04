@@ -12,8 +12,6 @@ const nextConfig = {
       },
     ],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/temple-five-dawns' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/temple-five-dawns/' : '',
   experimental: {
     optimizePackageImports: ['date-fns'],
   },
