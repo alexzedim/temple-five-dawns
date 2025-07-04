@@ -1,4 +1,5 @@
-/** @type {import('next').NextConfig} */
+import type { NextConfig } from 'next'
+
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
@@ -22,6 +23,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: false,
   },
-}
+} satisfies NextConfig
 
-module.exports = nextConfig 
+export default nextConfig
