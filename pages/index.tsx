@@ -25,7 +25,7 @@ export default function Home(): JSX.Element {
                 className="rounded-sm"
               />
               <div>
-                <h1 className="text-2xl font-heading font-bold tracking-tight text-gold">
+                <h1 className="text-2xl font-heading font-normal tracking-tight text-gold">
                   TEMPLE FIVE DAWNS
                 </h1>
                 <div className="text-xs text-white-dark tracking-widest mt-1">ХРАМ ПЯТИ РАССВЕТОВ</div>
@@ -51,12 +51,12 @@ export default function Home(): JSX.Element {
                   src="/images/monk-sigil.png"
                   alt="Monk Sigil"
                   width={1200}
-                  height={600}
+                  height={800}
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute bottom-0 left-0 p-8 z-20">
                   <div className="inline-block bg-gold px-3 py-1 text-xs font-semibold text-dark uppercase tracking-wider mb-4">Архив сообщества</div>
-                  <h1 className="text-4xl md:text-5xl font-heading font-bold text-gold mb-4 max-w-2xl">
+                  <h1 className="text-4xl md:text-6xl font-heading font-normal text-gold mb-4 max-w-2xl">
                     Храм Пяти Рассветов: Взгляд Изнутри
                   </h1>
                   <p className="text-lg text-smoke mb-6 max-w-2xl">
@@ -198,7 +198,7 @@ export default function Home(): JSX.Element {
           <div className="container mx-auto px-4 my-16">
             <div className="flex items-center mb-12">
               <div className="w-12 h-1 bg-jade mr-4"></div>
-              <h2 className="text-2xl font-serif font-bold">Архивные материалы</h2>
+              <h2 className="text-2xl font-heading font-bold">Архивные материалы</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

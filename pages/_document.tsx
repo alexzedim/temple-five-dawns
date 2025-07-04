@@ -6,15 +6,9 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        {/* Inter - для заголовков */}
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&subset=cyrillic" 
-          rel="stylesheet" 
-        />
-        {/* Source Sans Pro - для чтения */}
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap&subset=cyrillic" 
-          rel="stylesheet" 
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&subset=cyrillic"
+          rel="stylesheet"
         />
       </Head>
       <body>
@@ -23,4 +17,4 @@ export default function Document() {
       </body>
     </Html>
   )
-} 
+}

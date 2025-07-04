@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap&subset=cyrillic');
 
 @tailwind base;
 @tailwind components;
@@ -7,14 +6,13 @@
 
 @layer base {
   html {
-    font-family: 'Source Sans Pro', system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
 
   body {
     @apply bg-jade text-smoke font-body;
   }
 
-  /* Заголовки используют Inter */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', system-ui, sans-serif;
   }
@@ -71,27 +69,27 @@
 
 /* Custom prose styles for markdown content */
 .prose {
-  @apply text-smoke font-body;
+  @apply text-smoke font-body text-lg font-light;
 }
 
 .prose h1 {
-  @apply text-3xl font-bold text-gold mb-6 font-heading;
+  @apply text-4xl font-normal text-gold mb-6 font-heading;
 }
 
 .prose h2 {
-  @apply text-2xl font-bold text-gold mb-4 mt-8 font-heading;
+  @apply text-2xl font-normal text-gold mb-4 mt-8 font-heading ;
 }
 
 .prose h3 {
-  @apply text-xl font-semibold text-gold mb-3 mt-6 font-heading;
+  @apply text-xl font-normal text-gold mb-3 mt-6 font-heading;
 }
 
 .prose h4 {
-  @apply text-lg font-semibold text-gold mb-2 mt-4 font-heading;
+  @apply text-lg font-normal text-gold mb-2 mt-4 font-heading;
 }
 
 .prose p {
-  @apply mb-4 leading-relaxed font-body;
+  @apply mb-4 leading-relaxed font-body font-light;
 }
 
 .prose hr {
