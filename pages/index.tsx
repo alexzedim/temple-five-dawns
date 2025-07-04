@@ -48,8 +48,8 @@ export default function Home(): JSX.Element {
               <div className="relative mb-8 overflow-hidden rounded-md bg-jade-dark">
                 <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-70 z-10"></div>
                 <Image
-                  src="/images/monk-sigil.png"
-                  alt="Monk Sigil"
+                  src="/images/art/queen-lowres.png"
+                  alt="ADM SOV MDC"
                   width={1200}
                   height={800}
                   className="w-full h-[500px] object-cover"
