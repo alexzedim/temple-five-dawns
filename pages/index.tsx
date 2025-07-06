@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/lib/components/header'
 import Footer from '@/lib/components/footer'
+import RandomQuote from "@/lib/components/quote";
 
 export default function Home(): JSX.Element {
   return (
@@ -174,71 +175,9 @@ export default function Home(): JSX.Element {
 
           {/* Content Sections */}
           <div className="container mx-auto px-4 my-16">
-            <div className="flex items-center mb-12">
-              <div className="w-12 h-1 bg-jade mr-4"></div>
-              <h2 className="text-2xl font-heading font-bold">Архивные материалы</h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Card 1 */}
-              <div className="group">
-                <div className="aspect-w-16 aspect-h-9 mb-4 bg-gold-light overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center bg-jade-light text-jade text-5xl">
-                    🖼️
-                  </div>
-                </div>
-                <div className="text-sm uppercase tracking-wider text-dark-light mb-2">Коллекция</div>
-                <h3 className="text-xl font-medium mb-2 group-hover:text-jade transition-colors">Медиа-ресурсы</h3>
-                <p className="text-dark-light mb-4">
-                  Полная коллекция визуальных материалов сообщества, включая арты, эмодзи и стикеры
-                </p>
-                <Link href="/images" className="text-jade hover:text-jade-dark font-medium text-sm inline-flex items-center transition-colors">
-                  Открыть коллекцию
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-
-              {/* Card 2 */}
-              <div className="group">
-                <div className="aspect-w-16 aspect-h-9 mb-4 bg-purple-light overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center bg-smoke text-purple text-5xl">
-                    💬
-                  </div>
-                </div>
-                <div className="text-sm uppercase tracking-wider text-dark-light mb-2">Архив</div>
-                <h3 className="text-xl font-medium mb-2 group-hover:text-jade transition-colors">Документы и стратегии</h3>
-                <p className="text-dark-light mb-4">
-                  Архив стратегических материалов, принципов сообщества и административных документов
-                </p>
-                <Link href="/messages" className="text-jade hover:text-jade-dark font-medium text-sm inline-flex items-center transition-colors">
-                  Изучить архив
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-
-              {/* Card 3 */}
-              <div className="group">
-                <div className="aspect-w-16 aspect-h-9 mb-4 bg-jade-light overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center bg-gold-light text-gold text-5xl">
-                    🔗
-                  </div>
-                </div>
-                <div className="text-sm uppercase tracking-wider text-dark-light mb-2">Ресурсы</div>
-                <h3 className="text-xl font-medium mb-2 group-hover:text-jade transition-colors">Связанные проекты</h3>
-                <p className="text-dark-light mb-4">
-                  Официальные ресурсы и связанные проекты сообщества Храм Пяти Рассветов
-                </p>
-                <a href="https://discord.gg/P52zeKR" className="text-jade hover:text-jade-dark font-medium text-sm inline-flex items-center transition-colors">
-                  Discord-сервер
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
+            {/* Random Quote Component */}
+            <div className="py-8">
+              <RandomQuote />
             </div>
           </div>
 
