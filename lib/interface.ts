@@ -30,3 +30,29 @@ export interface MarkdownMeta {
   tags?: string[]
   excerpt?: string
 }
+
+export interface ImageItem {
+  type: 'image';
+  name: string;
+  path: string;
+}
+
+export interface FolderItem {
+  type: 'folder';
+  name: string;
+  path: string;
+  children: GalleryItem[];
+}
+
+export type GalleryItem = ImageItem | FolderItem;
+
+export interface GalleryProps {
+  images: GalleryItem[];
+  folder?: string;
+}
+
+
+export interface ImagesGalleryPageProps {
+  images: GalleryItem[];
+}
+

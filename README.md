@@ -1,7 +1,7 @@
 # 🏛️ TEMPLE FIVE DAWNS // ХРАМ ПЯТИ РАССВЕТОВ
 
 <p align="center">
-  <img src="images/monk-sigil.png" width="200px" alt="Monk Sigil"/>
+  <img src="public/images/monk-sigil.png" width="200px" alt="Monk Sigil"/>
 </p>
 
 <p align="center">
@@ -42,7 +42,7 @@
 **К сожалению, данная программа модернизации так и не была реализована** в полном объёме из-за организационных и политических сложностей внутри сообщества.
 
 <p align="center">
-  <img src="images/art/queen.png" width="100%" alt="Queen"/>
+  <img src="public/images/art/queen.png" width="100%" alt="Queen"/>
 </p>
 
 ## 🔗 Связанные ресурсы
