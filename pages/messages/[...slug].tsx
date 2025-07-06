@@ -72,21 +72,6 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Main Content - 8 columns on desktop */}
             <article className="lg:col-span-8">
-              {/* Article Date */}
-              {file.date && (
-                <div className="mb-6 text-sm text-smoke-dark">
-                  <span className="text-gold font-medium">Дата создания:</span>{' '}
-                  <a 
-                    href="https://github.com/alexzedim/temple-five-dawns/commit/d59c80388daeec4822c97ba4e16855b8750834f0"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-jade hover:text-jade-dark underline transition-colors"
-                  >
-                    {file.date}
-                  </a>
-                </div>
-              )}
-
               {/* Article Content */}
               <div
                 className="prose prose-lg max-w-none
@@ -125,7 +110,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
               </footer>
             </article>
 
-                        {/* Sidebar - 4 columns on desktop */}
+            {/* Share */}
             <aside className="lg:col-span-4 space-y-8">
               <Share />
             </aside>
