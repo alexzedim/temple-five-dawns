@@ -9,14 +9,14 @@ module.exports = {
     extend: {
       colors: {
         // Main palette colors
-        smoke: '#f5f5f5',    // White smoke
+        smoke: '#f2f5fa',    // White smoke
         gold: '#e0cd67',     // Citron
         jade: '#00bb77',     // Jade
         purple: '#702963',   // Byzantium
         dark: '#393a41',     // Onyx
 
         // Essential variants
-        'smoke-dark': '#c4c4c4',
+        'smoke-dark': '#f2f5fa',
         'gold-dark': '#a38f21',
         'gold-light': '#f3ebc2',
         'jade-dark': '#007148',
@@ -50,7 +50,7 @@ module.exports = {
         sans: ['Source Sans Pro', 'system-ui', 'sans-serif'], // Для чтения
         heading: ['Inter', 'system-ui', 'sans-serif'], // Для заголовков
         serif: ['Georgia', 'serif'],
-        
+
         // Утилитарные классы
         'display': ['Inter', 'system-ui', 'sans-serif'], // Для больших заголовков
         'body': ['Source Sans Pro', 'system-ui', 'sans-serif'], // Для основного текста

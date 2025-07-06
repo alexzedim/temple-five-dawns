@@ -111,61 +111,32 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
             {/* Sidebar - 4 columns on desktop */}
             <aside className="lg:col-span-4 space-y-8">
-              {/* Table of Contents */}
-              <div className="bg-purple-dark border border-purple rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-heading font-bold text-gold mb-4">Содержание</h3>
-                <nav className="space-y-2">
-                  <a href="#overview" className="block text-sm text-smoke hover:text-jade transition-colors">
-                    Обзор документа
-                  </a>
-                  <a href="#content" className="block text-sm text-smoke hover:text-jade transition-colors">
-                    Основное содержание
-                  </a>
-                  <a href="#conclusion" className="block text-sm text-smoke hover:text-jade transition-colors">
-                    Заключение
-                  </a>
-                </nav>
-              </div>
-
-              {/* Related Documents */}
-              <div className="bg-dark border border-purple rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-heading font-bold text-gold mb-4">Похожие документы</h3>
-                <div className="space-y-4">
-                  <Link href="/messages/foundation" className="block group">
-                    <div className="text-sm text-jade uppercase tracking-wider mb-1">Основы</div>
-                    <h4 className="font-medium text-gold group-hover:text-jade transition-colors">
-                      Основные документы сообщества
-                    </h4>
-                    <p className="text-sm text-smoke-dark mt-1">Стратегические материалы и принципы</p>
-                  </Link>
-
-                  <Link href="/messages/information" className="block group">
-                    <div className="text-sm text-jade uppercase tracking-wider mb-1">Информация</div>
-                    <h4 className="font-medium text-gold group-hover:text-jade transition-colors">
-                      Информационные материалы
-                    </h4>
-                    <p className="text-sm text-smoke-dark mt-1">Справочная информация и руководства</p>
-                  </Link>
-                </div>
-              </div>
-
               {/* Share */}
               <div className="bg-gold-dark border border-gold rounded-2xl p-6 shadow-lg">
                 <h3 className="text-lg font-heading font-bold text-dark mb-4">Поделиться</h3>
                 <div className="flex space-x-3">
-                  <button className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors">
+                  <button
+                    onClick={() => {
+                      const url = `https://discord.com/channels/@me?content=${encodeURIComponent(window.location.href)}`;
+                      window.open(url, '_blank');
+                    }}
+                    className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors"
+                    title="Поделиться в Discord"
+                  >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                      <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.019 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1568 2.4189Z"/>
                     </svg>
                   </button>
-                  <button className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors">
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText(window.location.href);
+                      // Можно добавить уведомление о копировании
+                    }}
+                    className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors"
+                    title="Скопировать ссылку"
+                  >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
-                    </svg>
-                  </button>
-                  <button className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
                     </svg>
                   </button>
                 </div>
