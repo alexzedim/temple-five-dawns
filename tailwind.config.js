@@ -45,12 +45,12 @@ module.exports = {
           900: '#002618',
         }
       },
-            fontFamily: {
+      fontFamily: {
         // Основные шрифты
         sans: ['Inter', 'system-ui', 'sans-serif'], // Для чтения
         heading: ['Inter', 'system-ui', 'sans-serif'], // Для заголовков
         serif: ['Georgia', 'serif'],
-        
+
         // Утилитарные классы
         'display': ['Inter', 'system-ui', 'sans-serif'], // Для больших заголовков
         'body': ['Inter', 'system-ui', 'sans-serif'], // Для основного текста
