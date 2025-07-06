@@ -1,3 +1,8 @@
+---
+title: 🎆 MMXXIV — ЛИЧНОЕ ПОЗДРАВЛЕНИЕ
+date: 2024-02-04
+---
+
 # 🎆 MMXXIV — ЛИЧНОЕ ПОЗДРАВЛЕНИЕ
 
 ### CYR • NEO • MONK • DSCD • CMNTY

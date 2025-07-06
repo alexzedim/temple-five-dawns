@@ -1,3 +1,8 @@
+---
+title: 🏛️ The Neo Monk Discord Community
+date: 2024-02-04
+---
+
 # 🏛️ The Neo Monk Discord Community
 
 ## 🎯 The REASON

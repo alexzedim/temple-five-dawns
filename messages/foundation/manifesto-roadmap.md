@@ -1,3 +1,8 @@
+---
+title: Monk Discord Community II
+date: 2024-02-04
+---
+
 # Monk Discord Community II 
 
 ## MANIFESTO //: ROADMAP

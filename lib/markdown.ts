@@ -49,7 +49,7 @@ export function getAllMarkdownFiles(): MarkdownFile[] {
           title,
           content,
           excerpt,
-          date: data.date ?? null,
+          date: data.date ? new Date(data.date).toISOString().split('T')[0] : null,
           category: relativePath || 'general',
           tags: Array.isArray(data.tags) ? data.tags.filter((tag): tag is string => typeof tag === 'string') : [],
           fullPath,

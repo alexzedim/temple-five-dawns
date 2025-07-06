@@ -1,3 +1,8 @@
+---
+title: Женя
+date: 2024-02-04
+---
+
 # Женя
 
 > *[Systems either change or die.](https://youtu.be/iKl0F640914?t=129)*

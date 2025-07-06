@@ -1,3 +1,8 @@
+---
+title: 🚀 NEO MONK DISCORD COMMUNITY
+date: 2024-02-04
+---
+
 # 🚀 NEO MONK DISCORD COMMUNITY
 
 ## 📋 STRATEGY ROADMAP

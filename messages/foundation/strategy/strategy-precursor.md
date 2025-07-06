@@ -1,3 +1,8 @@
+---
+title: S for Strategy
+date: 2024-02-04
+---
+
 ## S for Strategy
 
 > Черновая прекурсор-версия

@@ -1,3 +1,8 @@
+---
+title: 📝 LETTER OF RESIGNATION
+date: 2024-02-04
+---
+
 # 📝 LETTER OF RESIGNATION
 
 ### CYR • NEO • MONK • DSCD • CMNTY
