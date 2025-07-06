@@ -45,15 +45,15 @@ module.exports = {
           900: '#002618',
         }
       },
-      fontFamily: {
+            fontFamily: {
         // Основные шрифты
-        sans: ['Source Sans Pro', 'system-ui', 'sans-serif'], // Для чтения
+        sans: ['Inter', 'system-ui', 'sans-serif'], // Для чтения
         heading: ['Inter', 'system-ui', 'sans-serif'], // Для заголовков
         serif: ['Georgia', 'serif'],
-
+        
         // Утилитарные классы
         'display': ['Inter', 'system-ui', 'sans-serif'], // Для больших заголовков
-        'body': ['Source Sans Pro', 'system-ui', 'sans-serif'], // Для основного текста
+        'body': ['Inter', 'system-ui', 'sans-serif'], // Для основного текста
       },
     },
   },
