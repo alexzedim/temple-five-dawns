@@ -11,7 +11,10 @@ export default function RandomQuote(): JSX.Element {
 
   return (
     <div className="relative text-center">
-      <blockquote className="text-dark text-3xl leading-relaxed italic tracking-wide">
+      <blockquote
+        className="text-dark text-3xl leading-relaxed tracking-wide"
+        style={{ fontStyle: 'italic', fontWeight: '300' }}
+      >
         <span className="text-jade text-3xl mr-6">« </span>
         {currentQuote}
         <span className="text-jade text-3xl ml-6"> »</span>
