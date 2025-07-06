@@ -89,7 +89,7 @@ date: 2024-02-04
 
 <div align="center">
 
-![janesina-img-4.png](/images/assets/img-4.png)
+![img-3.png](/images/assets/img-3.png)
 
 </div>
 
