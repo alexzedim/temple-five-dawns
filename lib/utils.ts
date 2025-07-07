@@ -8,3 +8,10 @@ export const toCategoryName = (category: string) => category === 'general' ? 'О
   category.split('/').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' | ');
 
 export const toCategoryNumber = <T>(categoryFiles: Array<T>): string => categoryFiles.length > 4 ? `${categoryFiles.length} документов в категории` :`${categoryFiles.length} документа в категории`
+
+export const formatImageName = (name: string) => {
+  const nameWithoutExt = name.replace(/\.[^/.]+$/, "");
+  return nameWithoutExt
+    .replace(/[-_]+/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
+}

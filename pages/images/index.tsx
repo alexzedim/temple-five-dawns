@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Header from '@/lib/components/header';
 import Footer from '@/lib/components/footer';
 import { GalleryItem, GalleryProps, ImagesGalleryPageProps } from "@/lib/interface";
-import { formatImageName, getImages } from "@/lib/markdown";
+import { formatImageName } from "@/lib/utils";
 
 function Gallery({ images, folder = '' }: GalleryProps) {
   return (
@@ -59,6 +59,7 @@ export default function ImagesGalleryPage({ images }: ImagesGalleryPageProps) {
 }
 
 export async function getStaticProps() {
+  const { getImages } = await import("@/lib/images");
   const images = await getImages();
   return { props: { images } };
 }

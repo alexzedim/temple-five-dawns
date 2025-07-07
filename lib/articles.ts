@@ -73,7 +73,7 @@ export const articles = [
   },
   {
     category: 'Проблематика',
-    title: 'False sense of Comfort',
+    title: 'False Sense of Comfort',
     content: 'Размышления о том, как индивидуальные интересы и личные границы влияют на участие в коллективных проектах.',
     href: '/messages/foundation/problematics/false-sense-of-comfort',
   },
