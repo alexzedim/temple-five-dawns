@@ -5,8 +5,11 @@ import Header from '@/lib/components/header'
 import Footer from '@/lib/components/footer'
 import RandomQuote from "@/lib/components/quote";
 import Articles from "@/lib/components/articles";
+import { useRouter } from 'next/router';
 
 export default function Home(): JSX.Element {
+  const { basePath } = useRouter();
+
   return (
     <>
       <Head>
@@ -28,7 +31,7 @@ export default function Home(): JSX.Element {
               <div className="relative mb-8 overflow-hidden rounded-md bg-jade-dark">
                 <div className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-70 z-10"></div>
                 <Image
-                  src="/images/art/queen-lowres.png"
+                  src={`${basePath}/images/art/queen-lowres.png`}
                   alt="ADM SOV MDC"
                   width={1200}
                   height={800}

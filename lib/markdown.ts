@@ -98,5 +98,17 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(html)
     .process(markdown)
 
-  return result.toString()
+  let htmlContent = result.toString();
+
+  // Определяем basePath для github-pages
+  let basePath = '';
+  if (process.env.GITHUB_PAGES === 'true') {
+    basePath = '/temple-five-dawns';
+  }
+  // Подменяем пути к изображениям и url('/images/...')
+  if (basePath) {
+    htmlContent = htmlContent.replace(/(["'\(])\/images\//g, `$1${basePath}/images/`);
+  }
+
+  return htmlContent;
 }

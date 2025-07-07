@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Header() {
+  const { basePath } = useRouter();
   return (
     <header className="border-b border-smoke-dark sticky top-0 z-50 bg-dark">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center space-x-3">
           <Image
-            src="/images/monk-sigil.png"
+            src={`${basePath}/images/monk-sigil.png`}
             alt="Monk Sigil"
             width={50}
             height={50}

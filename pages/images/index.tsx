@@ -4,8 +4,10 @@ import Header from '@/lib/components/header';
 import Footer from '@/lib/components/footer';
 import { GalleryItem, GalleryProps, ImagesGalleryPageProps } from "@/lib/interface";
 import { formatImageName } from "@/lib/utils";
+import { useRouter } from 'next/router';
 
 function Gallery({ images, folder = '' }: GalleryProps) {
+  const { basePath } = useRouter();
   return (
     <div className="mb-12">
       {folder && (
@@ -16,7 +18,7 @@ function Gallery({ images, folder = '' }: GalleryProps) {
           item.type === 'image' ? (
             <div key={item.path} className="bg-smoke rounded shadow hover:shadow-lg transition overflow-hidden">
               <Image
-                src={item.path}
+                src={`${basePath}${item.path}`}
                 alt={formatImageName(item.name)}
                 width={400}
                 height={300}
