@@ -86,7 +86,7 @@ export const articles = [
   {
     category: 'Письма',
     title: 'Janesina',
-    content: 'История Жени в сообществе.',
+    content: 'История девочки по имени Женя.',
     href: '/messages/foundation/letters/janesina',
   },
   {
