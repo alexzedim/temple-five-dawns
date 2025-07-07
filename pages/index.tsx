@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Header from '@/lib/components/header'
 import Footer from '@/lib/components/footer'
 import RandomQuote from "@/lib/components/quote";
+import Articles from "@/lib/components/articles";
 
 export default function Home(): JSX.Element {
   return (
@@ -55,24 +56,7 @@ export default function Home(): JSX.Element {
               <div className="p-6 border-l-4 border-jade bg-smoke shadow-sm">
                 <h2 className="text-2xl font-heading font-bold mb-4 text-purple">Избранные материалы</h2>
                 <div className="space-y-6">
-                  <Link href="/messages/foundation/library/pacifism_article" className="block group">
-                    <div className="text-sm text-dark-light uppercase tracking-wider mb-1">Библиотека</div>
-                    <h3 className="font-medium text-lg text-gold group-hover:text-jade transition-colors">Пацифизм губит ухоженные сады</h3>
-                    <p className="text-dark-light mt-1 text-sm">Основная причина гибели хороших интернет-сообществ — отказ от самозащиты</p>
-                  </Link>
-
-                  <Link href="/messages/foundation/problematics/personal-regiment" className="block group">
-                    <div className="text-sm text-dark-light uppercase tracking-wider mb-1">Внешние отношения</div>
-                    <h3 className="font-medium text-lg text-gold group-hover:text-jade transition-colors">Атлас классовых сообществ</h3>
-                    <p className="text-dark-light mt-1 text-sm">Самый полный путеводитель по русскоязычным дискорд-сообществам World of Warcraft</p>
-                  </Link>
-
-                  <Link href="/messages/information/atlas" className="block group">
-                    <div className="text-sm text-dark-light uppercase tracking-wider mb-1">Информация</div>
-                    <h3 className="font-medium text-lg text-gold group-hover:text-jade transition-colors">Атлас классовых сообществ</h3>
-                    <p className="text-dark-light mt-1 text-sm">Путеводитель по русскоязычным дискорд-сообществам World of Warcraft</p>
-                  </Link>
-
+                  <Articles/>
                   <Link href="/messages" className="text-jade hover:text-jade-dark text-sm font-medium transition-colors">
                     Все материалы →
                   </Link>

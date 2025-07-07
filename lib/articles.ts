@@ -1,0 +1,110 @@
+export const articles = [
+  {
+    category: 'Библиотека',
+    title: 'Пацифизм губит ухоженные сады',
+    content: 'Основная причина гибели хороших интернет-сообществ — отказ от самозащиты',
+    href: '/messages/foundation/library/pacifism_article',
+  },
+  {
+    category: 'Внешние отношения',
+    title: 'Атлас классовых сообществ',
+    content: 'Самый полный путеводитель по русскоязычным дискорд-сообществам World of Warcraft',
+    href: '/messages/foundation/problematics/personal-regiment',
+  },
+  {
+    category: 'Внешние отношения',
+    title: 'Атлас классовых сообществ',
+    content: 'Путеводитель по русскоязычным дискорд-сообществам World of Warcraft',
+    href: '/messages/information/atlas',
+  },
+  {
+    category: 'Администрирование',
+    title: 'Руководство по администрированию',
+    content: 'Администрирование это не столько про власть, или про лидерство, — но это то, что придется либо узурпировать, либо заслужить.',
+    href: '/messages/chat/adm-tenets',
+  },
+  {
+    category: 'Администрирование',
+    title: 'Принципы поведения в зрелом сообществе',
+    content: 'Принципы — это не правила, а законы построения этих правил.',
+    href: '/messages/chat/civil-tenets',
+  },
+  {
+    category: 'Проблематика',
+    title: 'Единодушие, вырождение и «друзьяшки»',
+    content: 'Сообщество, в котором, как в янтаре, устанавливается и застывает "мертвое равновесие", где все участники неявно и непублично кооперируются в иных пространствах для общения или семафорят своими игнор-листами "не обижать друг друга" вместо того, чтобы не обижаться друг на друга, — обречено на вырождение.',
+    href: '/messages/foundation/problematics/extinction-unanimous',
+  },
+  {
+    category: 'Основание',
+    title: 'Консолидированное мнение',
+    content: 'Анализ состояния классовых сообществ и вызовов, с которыми они сталкиваются в современном интернет-пространстве.',
+    href: '/messages/foundation/consolidated-statement',
+  },
+  {
+    category: 'Проблематика',
+    title: 'Приключения Крысоловов-дудочников во фрактальных системах',
+    content: 'Анализ проблемы "крысоловов" — персоналий, которые уводят аудиторию из больших сообществ в свои маленькие пространства.',
+    href: '/messages/foundation/problematics/rat-man-fractals',
+  },
+  {
+    category: 'Проблематика',
+    title: 'Цветовая дифференциация штанов, вахтеры-клоуны и институт репутации',
+    content: 'Исследование проблемы ролевой иерархии в сообществах и её влияния на восприятие администрации участниками.',
+    href: '/messages/foundation/problematics/kin-dza-dza',
+  },
+  {
+    category: 'Библиотека',
+    title: '«Я тоже верил в свободу интернета. А потом управлял Reddit»: тред о соцсетях и недостижимой свободе слова в них',
+    content: 'Перевод рассказа бывшего гендиректора Reddit о природе цензуры в социальных сетях и реальных причинах ограничений.',
+    href: '/messages/foundation/library/reddit_ceo_article',
+  },
+  {
+    category: 'Проблематика',
+    title: 'Война и игры',
+    content: 'Анализ конфликтов в игровых сообществах и их влияния на социальную динамику.',
+    href: '/messages/foundation/problematics/wars-and-games',
+  },
+  {
+    category: 'Проблематика',
+    title: 'Persona Est Distress',
+    content: 'Анализ того, как система аккумулирование лояльности вокруг одного эго может скрытно заменить собой общественные идеалы в публичном сообществе.',
+    href: '/messages/foundation/problematics/persona-is-distress',
+  },
+  {
+    category: 'Проблематика',
+    title: 'False sense of Comfort',
+    content: 'Размышления о том, как индивидуальные интересы и личные границы влияют на участие в коллективных проектах.',
+    href: '/messages/foundation/problematics/false-sense-of-comfort',
+  },
+  {
+    category: 'Письма',
+    title: 'Kerrigan',
+    content: 'Письмо о будущем сообщества, проблемах управления и личной усталости от игровых войн, и призыв к изменению парадигмы от персонализма к коллективному развитию.',
+    href: '/messages/foundation/letters/andrey',
+  },
+  {
+    category: 'Письма',
+    title: 'Janesina',
+    content: 'История Жени в сообществе.',
+    href: '/messages/foundation/letters/janesina',
+  },
+  {
+    category: 'Письма',
+    title: 'Nims',
+    content: 'Размышления о власти, влиянии и истинной природе управления в игровых сообществах.',
+    href: '/messages/foundation/letters/nims',
+  },
+  {
+    category: 'Письма',
+    title: 'Letter of Resignation',
+    content: 'Официальное заявление об уходе с административной должности.',
+    href: '/messages/foundation/letters/resignation-letter',
+  },
+  {
+    category: 'Письма',
+    title: 'Letter of Transition',
+    content: 'Преемственность роли Юли в истории сообщества монахов и размышления о будущем сообщества.',
+    href: '/messages/foundation/letters/janisse',
+  }
+];

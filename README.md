@@ -108,7 +108,7 @@
 ##### 🔍 Проблематика ([`/messages/foundation/problematics/`](./messages/foundation/problematics/))
 - [`challenges.md`](./messages/foundation/problematics/challenges.md) — Вызовы сообщества
 - [`extinction-unanimous.md`](./messages/foundation/problematics/extinction-unanimous.md) — Проблема единогласия
-- [`false-sence-of-comfort.md`](./messages/foundation/problematics/false-sence-of-comfort.md) — Ложное чувство комфорта
+- [`false-sense-of-comfort.md`](messages/foundation/problematics/false-sense-of-comfort.md) — Ложное чувство комфорта
 - [`kin-dza-dza.md`](./messages/foundation/problematics/kin-dza-dza.md) — Анализ по мотивам фильма "Кин-дза-дза"
 - [`personal-regiment.md`](./messages/foundation/problematics/personal-regiment.md) — Личный режим
 - [`persona-is-distress.md`](./messages/foundation/problematics/persona-is-distress.md) — Персона в бедствии

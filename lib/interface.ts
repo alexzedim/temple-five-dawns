@@ -16,7 +16,7 @@ export interface MarkdownFile {
   title: string
   content: string
   excerpt: string
-  date?: string
+  date: string | undefined | null
   category?: string
   tags?: string[]
   fullPath: string
@@ -50,7 +50,6 @@ export interface GalleryProps {
   images: GalleryItem[];
   folder?: string;
 }
-
 
 export interface ImagesGalleryPageProps {
   images: GalleryItem[];
