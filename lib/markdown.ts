@@ -1,7 +1,7 @@
 import path from 'path'
 import { remark } from 'remark'
 import html from 'remark-html'
-import { MarkdownFile } from "@/lib/interface";
+import { GalleryItem, MarkdownFile } from "@/lib/interface";
 import fs from 'fs'
 import matter from "gray-matter";
 
@@ -99,4 +99,39 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .process(markdown)
 
   return result.toString()
+}
+
+const IMAGES_ROOT = path.join(process.cwd(), 'public', 'images');
+
+export async function getImages(dir = ''): Promise<GalleryItem[]> {
+  const absDir = path.join(IMAGES_ROOT, dir);
+  const entries = await fs.readdirSync(absDir, { withFileTypes: true });
+  let files: GalleryItem[] = [];
+  for (const entry of entries) {
+    if (entry.isDirectory()) {
+      const subFiles = await getImages(path.join(dir, entry.name));
+      files.push({
+        type: 'folder',
+        name: entry.name,
+        path: path.join(dir, entry.name),
+        children: subFiles,
+      });
+    } else if (/\.(png|jpe?g|gif|webp|avif)$/i.test(entry.name)) {
+      files.push({
+        type: 'image',
+        name: entry.name,
+        path: path.join('/images', dir, entry.name).replace(/\\/g, '/'),
+      });
+    }
+  }
+  return files;
+}
+
+export function formatImageName(name: string) {
+  // Убираем расширение
+  const nameWithoutExt = name.replace(/\.[^/.]+$/, "");
+  // Преобразуем kebab-case/underscore в слова с заглавной буквы
+  return nameWithoutExt
+    .replace(/[-_]+/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
 }

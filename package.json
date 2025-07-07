@@ -1,13 +1,21 @@
 {
   "name": "temple-five-dawns",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "homepage": "https://temple-five-dawns.vercel.app",
   "private": true,
+  "author": {
+    "name": "alexzedim"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexzedim/temple-five-dawns.git"
+  },
+  "languageName": "next",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {

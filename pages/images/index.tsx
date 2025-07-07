@@ -1,50 +1,9 @@
-import fs from 'fs/promises';
-import path from 'path';
 import Image from 'next/image';
 import Head from 'next/head';
 import Header from '@/lib/components/header';
 import Footer from '@/lib/components/footer';
 import { GalleryItem, GalleryProps, ImagesGalleryPageProps } from "@/lib/interface";
-
-const IMAGES_ROOT = path.join(process.cwd(), 'public', 'images');
-
-async function getImages(dir = ''): Promise<GalleryItem[]> {
-  const absDir = path.join(IMAGES_ROOT, dir);
-  const entries = await fs.readdir(absDir, { withFileTypes: true });
-  let files: GalleryItem[] = [];
-  for (const entry of entries) {
-    if (entry.isDirectory()) {
-      const subFiles = await getImages(path.join(dir, entry.name));
-      files.push({
-        type: 'folder',
-        name: entry.name,
-        path: path.join(dir, entry.name),
-        children: subFiles,
-      });
-    } else if (/\.(png|jpe?g|gif|webp|avif)$/i.test(entry.name)) {
-      files.push({
-        type: 'image',
-        name: entry.name,
-        path: path.join('/images', dir, entry.name).replace(/\\/g, '/'),
-      });
-    }
-  }
-  return files;
-}
-
-export async function getServerSideProps() {
-  const images = await getImages();
-  return { props: { images } };
-}
-
-function formatImageName(name: string) {
-  // Убираем расширение
-  const nameWithoutExt = name.replace(/\.[^/.]+$/, "");
-  // Преобразуем kebab-case/underscore в слова с заглавной буквы
-  return nameWithoutExt
-    .replace(/[-_]+/g, ' ')
-    .replace(/\b\w/g, c => c.toUpperCase());
-}
+import { formatImageName, getImages } from "@/lib/markdown";
 
 function Gallery({ images, folder = '' }: GalleryProps) {
   return (
@@ -97,4 +56,9 @@ export default function ImagesGalleryPage({ images }: ImagesGalleryPageProps) {
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const images = await getImages();
+  return { props: { images } };
 }
