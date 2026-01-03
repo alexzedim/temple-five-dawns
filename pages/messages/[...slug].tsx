@@ -5,6 +5,8 @@ import { categoryToPath } from "@/lib/utils";
 import { MarkdownPageProps } from "@/lib/interface";
 import { getAllMarkdownFiles, getMarkdownFileBySlug, markdownToHtml } from "@/lib/markdown";
 import {useEffect, useState} from "react";
+import Header from "@/lib/components/header";
+import Footer from "@/lib/components/footer";
 
 export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): JSX.Element {
   const [showNotification, setShowNotification] = useState(false);
@@ -28,12 +30,12 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
   if (!file) {
     return (
-      <div className="min-h-screen bg-dark flex items-center justify-center">
+      <div className="min-h-screen bg-charcoal flex items-center justify-center">
         <div className="text-center max-w-md mx-auto px-4">
-          <div className="bg-purple-dark border border-purple rounded-2xl p-8 shadow-lg">
+          <div className="bg-charcoal-light border-2 border-gold rounded-sm p-8 shadow-lg">
             <h1 className="text-2xl font-heading font-bold text-gold mb-4">Документ не найден</h1>
-            <p className="text-smoke mb-6">Запрашиваемый документ не существует или был удалён.</p>
-            <Link href="/messages" className="bg-jade hover:bg-jade-dark text-dark px-6 py-3 rounded-lg font-medium transition-colors">
+            <p className="text-cream mb-6">Запрашиваемый документ не существует или был удалён.</p>
+            <Link href="/messages" className="btn-primary">
               Вернуться к списку
             </Link>
           </div>
@@ -49,38 +51,24 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
         <meta name="description" content={file.excerpt} />
       </Head>
 
-      <div className="min-h-screen bg-dark">
+      <div className="min-h-screen bg-charcoal flex flex-col">
         {/* Header */}
-        <header className="bg-dark/90 backdrop-blur-sm border-b border-purple sticky top-0 z-50">
-          <div className="max-w-screen-xl mx-auto px-4 sm:px-8">
-            <div className="flex justify-between items-center py-6">
-              <div className="flex items-center space-x-4">
-                <Link href="/" className="text-2xl font-heading font-normal tracking-tight text-gold hover:text-jade transition-colors">
-                  ← Сообщения
-                </Link>
-              </div>
-              <nav className="hidden md:flex space-x-8">
-                <Link href="/messages" className="nav-link font-semibold text-gold hover:text-jade">Сообщения</Link>
-                <Link href="/images" className="nav-link text-gold hover:text-jade">Медиа</Link>
-              </nav>
-            </div>
-          </div>
-        </header>
+        <Header />
 
-        <main className="max-w-screen-xl mx-auto px-4 sm:px-8 py-16">
+        <main className="max-w-screen-xl mx-auto px-4 sm:px-8 py-16 flex-1">
           {/* Breadcrumb */}
           <nav className="mb-8">
-            <ol className="flex items-center space-x-2 text-sm text-smoke-dark">
+            <ol className="flex items-center space-x-2 text-sm text-cream-dark">
               <li>
                 <Link href="/" className="hover:text-gold transition-colors">Главная</Link>
               </li>
-              <li className="text-purple-light">/</li>
+              <li className="text-gold-light">/</li>
               <li>
                 <Link href="/messages" className="hover:text-gold transition-colors">Сообщения</Link>
               </li>
               {file.category && file.category !== 'general' && (
                 <>
-                  <li className="text-purple-light">/</li>
+                  <li className="text-gold-light">/</li>
                   <li className="text-gold font-medium">{categoryToPath(file.category)}</li>
                 </>
               )}
@@ -93,13 +81,13 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
             <article className="lg:col-span-8">
               {/* Article Date */}
               {file.date && (
-                <div className="mb-6 text-sm text-smoke-dark">
+                <div className="mb-6 text-sm text-cream-dark">
                   <span className="text-gold font-medium">Дата создания:</span>{' '}
                   <a
                     href="https://github.com/alexzedim/temple-five-dawns/commit/d59c80388daeec4822c97ba4e16855b8750834f0"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-jade hover:text-jade-dark underline transition-colors"
+                    className="text-gold hover:text-gold-light underline transition-colors"
                   >
                     {file.date}
                   </a>
@@ -113,30 +101,30 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
                   prose-h1:text-3xl prose-h1:mb-8 prose-h1:mt-12
                   prose-h2:text-2xl prose-h2:mb-6 prose-h2:mt-10
                   prose-h3:text-xl prose-h3:mb-4 prose-h3:mt-8
-                  prose-p:text-smoke prose-p:leading-relaxed prose-p:mb-6
+                  prose-p:text-cream prose-p:leading-relaxed prose-p:mb-6
                   prose-strong:text-gold prose-strong:font-semibold
-                  prose-a:text-jade prose-a:font-medium prose-a:no-underline hover:prose-a:underline
-                  prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:bg-dark prose-blockquote:pl-6
+                  prose-a:text-gold prose-a:font-medium prose-a:no-underline hover:prose-a:underline
+                  prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:bg-charcoal-light prose-blockquote:pl-6
                   prose-blockquote:py-4 prose-blockquote:rounded-r-lg
                   prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
                   prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
-                  prose-li:text-smoke
-                  prose-code:bg-purple-dark prose-code:text-jade-light prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
-                  prose-pre:bg-dark prose-pre:text-smoke prose-pre:p-6 prose-pre:rounded-lg prose-pre:overflow-x-auto prose-pre:border prose-pre:border-purple
-                  prose-hr:border-purple prose-hr:my-8"
+                  prose-li:text-cream
+                  prose-code:bg-charcoal prose-code:text-gold-light prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+                  prose-pre:bg-charcoal prose-pre:text-cream prose-pre:p-6 prose-pre:rounded-lg prose-pre:overflow-x-auto prose-pre:border-2 prose-pre:border-gold
+                  prose-hr:border-gold prose-hr:my-8"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}
               />
 
               {/* Article Footer */}
-              <footer className="mt-16 pt-8 border-t border-purple bg-transparent">
+              <footer className="mt-16 pt-8 border-t-2 border-gold bg-transparent">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
-                  <div className="text-sm text-smoke-dark">
+                  <div className="text-sm text-cream-dark">
                     <p className="font-medium text-gold">Путь документа:</p>
-                    <p className="font-mono text-xs bg-purple-dark text-jade-light px-3 py-2 rounded mt-2">{file.relativePath}</p>
+                    <p className="font-mono text-xs bg-charcoal border border-gold text-gold-light px-3 py-2 rounded-sm mt-2">{file.relativePath}</p>
                   </div>
                   <Link
                     href="/messages"
-                    className="bg-jade hover:bg-jade-dark text-dark px-6 py-3 rounded-lg font-medium transition-colors shadow-lg hover:shadow-xl"
+                    className="btn-primary"
                   >
                     ← К списку документов
                   </Link>
@@ -146,15 +134,15 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
             {/* Share */}
             <aside className="lg:col-span-4 space-y-8">
-              <div className="bg-gold-dark border border-gold rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-heading font-bold text-dark mb-4">Поделиться</h3>
+              <div className="bg-charcoal-light border-2 border-gold rounded-sm p-6 shadow-lg">
+                <h3 className="text-lg font-heading font-bold text-gold mb-4 uppercase tracking-wider">Поделиться</h3>
                 <div className="flex space-x-3">
                   <button
                     onClick={() => {
                       const url = `https://discord.com/channels/@me?content=${encodeURIComponent(window.location.href)}`;
                       window.open(url, '_blank');
                     }}
-                    className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors"
+                    className="bg-gold hover:bg-gold-light text-charcoal p-3 rounded-sm transition-colors font-semibold"
                     title="Поделиться в Discord"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -163,7 +151,7 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
                   </button>
                   <button
                     onClick={handleCopyLink}
-                    className="bg-jade hover:bg-jade-dark text-dark p-3 rounded-lg transition-colors"
+                    className="bg-gold hover:bg-gold-light text-charcoal p-3 rounded-sm transition-colors font-semibold"
                     title="Скопировать ссылку"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -175,13 +163,16 @@ export default function MarkdownPage({ file, htmlContent }: MarkdownPageProps): 
 
               {/* Уведомление о копировании */}
               {showNotification && (
-                <div className="relative top-4 bg-jade text-dark px-4 py-2 rounded-lg shadow-lg transition-all duration-300 ease-in-out">
-                  <span className="text-sm font-medium">Ссылка скопирована</span>
+                <div className="relative top-4 bg-gold text-charcoal px-4 py-2 rounded-sm shadow-lg transition-all duration-300 ease-in-out font-semibold">
+                  <span className="text-sm">Ссылка скопирована</span>
                 </div>
               )}
             </aside>
           </div>
         </main>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </>
   )

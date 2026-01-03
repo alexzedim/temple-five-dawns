@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,41 +11,142 @@
   }
 
   body {
-    @apply bg-jade text-smoke font-body;
+    @apply bg-charcoal text-cream font-body;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Playfair Display', 'Inter', system-ui, sans-serif;
+    @apply text-gold;
   }
 
   footer {
-    @apply bg-purple text-smoke py-8;
+    @apply bg-charcoal text-cream py-8 border-t-2 border-gold;
   }
 }
 
 @layer components {
+  /* Ornate border utilities */
+  .border-ornate {
+    @apply border-2 border-gold;
+    position: relative;
+  }
+
+  .border-ornate::before,
+  .border-ornate::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #d4af37;
+  }
+
+  .border-ornate::before {
+    top: -6px;
+    left: -6px;
+  }
+
+  .border-ornate::after {
+    bottom: -6px;
+    right: -6px;
+  }
+
+  /* Decorative divider */
+  .divider-ornate {
+    @apply relative my-8;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #d4af37 20%, #d4af37 80%, transparent);
+  }
+
+  .divider-ornate::before {
+    content: '✦';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #d4af37;
+    font-size: 1.5rem;
+    background: #1a1a1a;
+    padding: 0 12px;
+  }
+
+  /* Decorative line accent */
+  .accent-line {
+    @apply relative pl-4;
+  }
+
+  .accent-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #d4af37;
+  }
+
+  .accent-line-red::before {
+    background-color: #c41e3a;
+  }
+
+  /* Button styles */
   .btn-primary {
-    @apply bg-gold hover:bg-gold-dark text-dark font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-gold hover:bg-gold-light text-charcoal font-medium py-3 px-6 rounded-sm transition-colors duration-200 uppercase tracking-wider text-sm;
   }
 
   .btn-secondary {
-    @apply bg-jade-dark hover:bg-jade text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+    @apply bg-crimson hover:bg-crimson-dark text-cream font-medium py-3 px-6 rounded-sm transition-colors duration-200 uppercase tracking-wider text-sm;
   }
 
+  .btn-outline {
+    @apply border-2 border-gold text-gold hover:bg-gold hover:text-charcoal font-medium py-3 px-6 rounded-sm transition-colors duration-200 uppercase tracking-wider text-sm;
+  }
+
+  /* Card styles */
   .card {
-    @apply bg-dark rounded-lg shadow-md p-6 border border-gold;
+    @apply bg-charcoal-light rounded-sm shadow-lg p-6 border-2 border-gold;
   }
 
+  .card-ornate {
+    @apply bg-charcoal-light rounded-sm shadow-lg p-8 border-2 border-gold relative;
+  }
+
+  .card-ornate::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #d4af37;
+    border-left: 2px solid #d4af37;
+  }
+
+  .card-ornate::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid #d4af37;
+    border-right: 2px solid #d4af37;
+  }
+
+  /* Navigation links */
   .nav-link {
-    @apply text-smoke hover:text-gold transition-colors duration-200;
+    @apply text-cream hover:text-gold transition-colors duration-200 uppercase tracking-wider text-sm;
+  }
+
+  .nav-link-active {
+    @apply text-gold border-b-2 border-gold;
   }
 
   .footer-link {
-    @apply text-purple-light hover:text-gold transition-colors duration-200;
+    @apply text-cream-dark hover:text-gold transition-colors duration-200;
   }
 
   .footer-heading {
-    @apply text-gold font-semibold mb-4;
+    @apply text-gold font-semibold mb-4 uppercase tracking-wider;
   }
 
   .footer-content {
@@ -53,7 +155,8 @@
 
   .quote-italic {
     font-style: italic !important;
-    font-family: 'Inter', system-ui, sans-serif !important;
+    font-family: 'Playfair Display', 'Inter', system-ui, sans-serif !important;
+    @apply text-gold;
   }
 
   /* Line clamp utilities */
@@ -70,27 +173,36 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
+  /* Accent highlight */
+  .highlight-red {
+    @apply bg-crimson text-cream px-2 py-1;
+  }
+
+  .highlight-gold {
+    @apply bg-gold text-charcoal px-2 py-1;
+  }
 }
 
 /* Custom prose styles for markdown content */
 .prose {
-  @apply text-smoke font-body text-lg font-light;
+  @apply text-cream font-body text-lg font-light;
 }
 
 .prose h1 {
-  @apply text-4xl font-normal text-gold mb-6 font-heading;
+  @apply text-5xl font-normal text-gold mb-6 font-heading;
 }
 
 .prose h2 {
-  @apply text-2xl font-normal text-gold mb-4 mt-8 font-heading ;
+  @apply text-3xl font-normal text-gold mb-4 mt-8 font-heading;
 }
 
 .prose h3 {
-  @apply text-xl font-normal text-gold mb-3 mt-6 font-heading;
+  @apply text-2xl font-normal text-gold mb-3 mt-6 font-heading;
 }
 
 .prose h4 {
-  @apply text-lg font-normal text-gold mb-2 mt-4 font-heading;
+  @apply text-xl font-normal text-gold mb-2 mt-4 font-heading;
 }
 
 .prose p {
@@ -98,7 +210,7 @@
 }
 
 .prose hr {
-  @apply mb-4 pl-6;
+  @apply mb-4 pl-6 border-gold;
 }
 
 .prose ul {
@@ -114,23 +226,23 @@
 }
 
 .prose blockquote {
-  @apply border-l-4 border-gold bg-dark pl-4 py-2 mb-4 italic font-body;
+  @apply border-l-4 border-gold bg-charcoal-light pl-4 py-2 mb-4 italic font-body text-cream;
 }
 
 .prose code {
-  @apply bg-dark text-gold px-1 py-0.5 rounded text-sm font-mono;
+  @apply bg-charcoal-light text-gold px-1 py-0.5 rounded text-sm font-mono;
 }
 
 .prose pre {
-  @apply bg-dark text-smoke p-4 rounded-lg overflow-x-auto mb-4;
+  @apply bg-charcoal-light text-cream p-4 rounded-lg overflow-x-auto mb-4 border border-gold;
 }
 
 .prose pre code {
-  @apply bg-transparent text-smoke p-0;
+  @apply bg-transparent text-cream p-0;
 }
 
 .prose a {
-  @apply text-jade hover:text-jade-dark underline font-body;
+  @apply text-gold hover:text-gold-light underline font-body;
 }
 
 .prose strong {
@@ -138,21 +250,21 @@
 }
 
 .prose em {
-  @apply italic text-jade font-body;
+  @apply italic text-gold font-body;
 }
 
 .prose img {
-  @apply rounded-lg shadow-md my-4;
+  @apply rounded-lg shadow-md my-4 border-2 border-gold;
 }
 
 .prose table {
-  @apply w-full border-collapse border border-smoke-dark mb-4;
+  @apply w-full border-collapse border-2 border-gold mb-4;
 }
 
 .prose th {
-  @apply bg-smoke border border-smoke-dark px-4 py-2 text-left font-semibold font-heading;
+  @apply bg-charcoal-light border-2 border-gold px-4 py-2 text-left font-semibold font-heading text-gold;
 }
 
 .prose td {
-  @apply border border-smoke-dark px-4 py-2 font-body;
+  @apply border border-gold px-4 py-2 font-body text-cream;
 }

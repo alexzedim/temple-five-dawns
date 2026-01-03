@@ -8,33 +8,37 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Main palette colors
-        smoke: '#f2f5fa',    // White smoke
-        gold: '#e0cd67',     // Citron
-        jade: '#00bb77',     // Jade
-        purple: '#702963',   // Byzantium
-        dark: '#393a41',     // Onyx
+        // Blueprint aesthetic palette
+        charcoal: '#1a1a1a',      // Dark background
+        'charcoal-light': '#2a2a2a', // Lighter charcoal for contrast
+        gold: '#d4af37',           // Primary gold accent
+        'gold-dark': '#9d8c2a',    // Darker gold
+        'gold-light': '#e8c547',   // Lighter gold
+        crimson: '#c41e3a',        // Red accent
+        'crimson-dark': '#8b1528', // Darker red
+        cream: '#f5f1e8',          // Off-white text
+        'cream-dark': '#e8e4db',   // Darker cream
 
-        // Essential variants
-        'smoke-dark': '#f2f5fa',
-        'gold-dark': '#a38f21',
-        'gold-light': '#f3ebc2',
+        // Legacy colors for backwards compatibility
+        smoke: '#f5f1e8',
+        'smoke-dark': '#f5f1e8',
+        jade: '#00bb77',
         'jade-dark': '#007148',
         'jade-light': '#7effd0',
+        purple: '#702963',
         'purple-dark': '#43193b',
         'purple-light': '#d897cc',
+        dark: '#1a1a1a',
         'dark-light': '#5d5f6b',
-
-        // Legacy colors with reduced variants
         white: '#ffffff',
         black: '#000000',
 
-        // Keep minimal primary and monk colors for backwards compatibility
+        // Primary and monk colors for backwards compatibility
         primary: {
           50: '#f9f5e1',
           100: '#f3ebc2',
-          500: '#e0cd67',  // gold
-          600: '#a38f21',  // gold-dark
+          500: '#d4af37',  // gold
+          600: '#9d8c2a',  // gold-dark
           700: '#6c5f16',
         },
         monk: {
